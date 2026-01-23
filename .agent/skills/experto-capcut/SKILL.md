@@ -21,27 +21,13 @@ Antes de generar el prompt, identifica:
 - **Duración Estimada**: Corto (<30s) o Largo (>1m).
 
 ### 2. Estructura del Prompt para CapCut
-La IA de CapCut responde mejor a descripciones concisas y visuales.
+La IA de CapCut (Script-to-Video) lee todo lo que pegas como si fuera el guion. Por eso, debes entregar **dos bloques separados**:
 
-#### Para Generación de Video (Texto a Video)
-Usa esta fórmula:
-`[Sujeto principal] + [Acción] + [Entorno] + [Estilo Artístico] + [Iluminación/Atmósfera]`
+#### Bloque 1: Guion de Narración (CLEAN SCRIPT)
+*Este es el bloque que el usuario copiará y pegará en la caja de texto de CapCut. NO debe contener "Escena 1", "Visual:", ni paréntesis de instrucciones, solo el texto hablado.*
 
-*   *Ejemplo*: "Un T-Rex rugiendo en una ciudad futurista de neón, estilo cyberpunk 3D, iluminación cinematográfica, 4k."
-
-#### Para Guion a Video (Script-to-Video)
-CapCut divide el texto en escenas. Estructura el output así:
-
-```text
-# Título del Video
-[Escena 1]
-Narración: (Texto que dirá la voz en off)
-Visual: (Descripción de lo que se ve para que la IA busque el stock o genere la imagen)
-
-[Escena 2]
-Narración: ...
-Visual: ...
-```
+#### Bloque 2: Guía Visual (VISUAL REFERENCE)
+*Esta es la guía para que el usuario sepa qué buscar o generar en cada escena si edita manualmente.*
 
 ### 3. Palabras Clave "Mágicas" para CapCut
 Incluye estos términos si buscas alta calidad:
@@ -51,9 +37,12 @@ Incluye estos términos si buscas alta calidad:
 - Styles: "Anime", "Cyberpunk", "Oil painting", "Surrealism"
 
 ## Ejemplo de Respuesta al Usuario
-> "Aquí tienes el prompt optimizado para CapCut:
+> "Aquí tienes tu material optimizado. Copia el **Bloque 1** directamente en CapCut.
 >
-> **Prompt de Imagen/Video:** 'Spinosaurus swimming underwater, bubbles, ancient river, realistic texture, national geographic style, 8k.'
-> 
-> **Estructura de Guion Sugerida:**
-> 'Escena 1: El depredador más grande. (Visual: Spinosaurus sombras en el agua).'"
+> **Bloque 1: Guion para Copiar (Solo Narración)**
+> ¿Sabías que el depredador más grande no era el T-Rex?
+> El Spinosaurus reinaba en los ríos antiguos.
+>
+> **Bloque 2: Guía Visual (Referencia)**
+> *   *Escena 1:* Spinosaurus swimming underwater, bubbles.
+> *   *Escena 2:* Spinosaurus vs T-Rex comparison."
