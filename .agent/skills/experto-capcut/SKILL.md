@@ -26,8 +26,11 @@ La IA de CapCut (Script-to-Video) lee todo lo que pegas como si fuera el guion. 
 #### Bloque 1: Guion de Narración (CLEAN SCRIPT)
 *Este es el bloque que el usuario copiará y pegará en la caja de texto de CapCut. NO debe contener "Escena 1", "Visual:", ni paréntesis de instrucciones, solo el texto hablado.*
 
-#### Bloque 2: Guía Visual (VISUAL REFERENCE)
-*Esta es la guía para que el usuario sepa qué buscar o generar en cada escena si edita manualmente.*
+#### Bloque 2: Guía Visual y Prompts (SCENE BY SCENE)
+*   Describe escena por escena e incluye:
+    1.  **PROMPT DE IMAGEN IA**: Para generar la base.
+    2.  **PROMPT ANIMACIÓN**: Instrucción de movimiento para herramientas como Grok/Haiper/Runway.
+*   *Formato*: [Tiempo] - [Descripción] - **IMG**: [...] - **ANIM**: [...]
 
 ### 3. Palabras Clave "Mágicas" para CapCut
 Incluye estos términos si buscas alta calidad:

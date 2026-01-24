@@ -52,12 +52,19 @@ Al recibir un tema, el entregable debe ser:
 1.  **Título/Tema**: Formulado como gancho.
 
 2.  **GUION DE NARRACIÓN (SOLO TEXTO)**:
-    - *IMPORTANTE*: Bloque de texto plano con SOLO lo que dice la voz en off. Sin timestamps.
+    - *IMPORTANTE*: Proporciona esto como un bloque de texto continuo o dividido por párrafos.
+    - **NO incluyas** etiquetas como "Narrador:", "Voz:", "Escena 1", ni tiempos dentro de este texto.
+    - Debe ser texto puro listo para que el usuario lo seleccione, copie y pegue en la herramienta de Texto a Voz.
+    - *Longitud sugerida*: Suficiente para 40-60 segundos de video (aprox 130-150 palabras).
 
 3.  **Guion Técnico Desglosado por Segundos**:
-    - `[0-3s]`: Visual: _______. Audio: _______. Texto: _______.
-    - `[3-7s]`: Visual: _______. Audio: _______. Texto: _______.
-    - `[7-15s]`: ... (y así hasta el final).
+    - `[0-3s]`:
+        - **Visual**: (Descripción de la acción).
+        - **PROMPT IMAGEN IA**: (Prompt para generar la imagen estática).
+        - **PROMPT ANIMACIÓN**: (Instrucción para animar esa imagen en Grok/Runway. Ej: "Camera zoom in, dinosaur turns head").
+        - **Audio**: (Referencia sonora).
+        - **Texto**: (Overlay).
+    - `[3-7s]`: ... (y así hasta el final).
 
 3.  **Checklist de Elementos a Grabar/Buscar**: Lista específica de clips CGI, imágenes, gráficos necesarios.
 

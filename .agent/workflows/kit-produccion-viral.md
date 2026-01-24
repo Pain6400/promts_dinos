@@ -33,12 +33,15 @@ Este flujo de trabajo orquesta múltiples habilidades para crear un producto fin
     *   **IMPORTANTE: Estructura del Output (Sigue este orden exacto):**
         1.  **Concepto Viral**: La idea central.
         2.  **BLOQUE 1: GUION DE NARRACIÓN (SOLO TEXTO)**:
-            *   Un bloque de código o texto plano que contenga **SOLO lo que el narrador debe decir**.
-            *   Sin tiempos, sin nombres de escena, sin acotaciones visuales.
-            *   Este bloque es para que el usuario haga "Copiar y Pegar" en CapCut.
+            *   Un bloque de texto plano con **SOLO lo que el narrador debe decir**.
+            *   **PROHIBIDO INCLUIR**: "Narrador:", "00:00", "Escena 1", o cualquier instrucción dentro de este texto.
+            *   Debe ser texto puro separado por párrafos para copiar y pegar directamente.
         3.  **BLOQUE 2: GUION TÉCNICO DETALLADO (Para el editor)**:
-            *   Aquí sí incluyes la tabla o lista con Tiempos, Visual, Audio y Texto Overlay.
-        4.  **Prompts de Generación**: Para imágenes/videos.
+            *   Esta tabla debe incluir OBLIGATORIAMENTE:
+                *   **PROMPT DE IMAGEN IA**: Para generar la estática.
+                *   **PROMPT ANIMACIÓN**: Para dar movimiento (Grok).
+            *   Columnas: Tiempo | Visual | PROMPT IMAGEN | PROMPT ANIMACIÓN | Audio | Texto Overlay.
+        4.  **Recomendaciones de Audio**: Música y efectos.
         5.  **Recomendaciones de Audio**: Música y efectos.
 
 ## Invocación
