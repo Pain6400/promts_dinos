@@ -38,9 +38,9 @@ Este flujo de trabajo orquesta múltiples habilidades para crear un producto fin
             *   Debe ser texto puro separado por párrafos para copiar y pegar directamente.
         3.  **BLOQUE 2: GUION TÉCNICO DETALLADO (Para el editor)**:
             *   Esta tabla debe incluir OBLIGATORIAMENTE:
-                *   **PROMPT DE IMAGEN IA**: Para generar la estática.
+                *   **PROMPT IMAGEN IA (Copia para cada escena)**: Para generar la estática.
                 *   **PROMPT ANIMACIÓN**: Para dar movimiento (Grok).
-            *   Columnas: Tiempo | Visual | PROMPT IMAGEN | PROMPT ANIMACIÓN | Audio | Texto Overlay.
+            *   Columnas: Tiempo | Frase del Audio | Visual | PROMPT IMAGEN IA (Copia para cada escena) | PROMPT ANIMACIÓN | Texto Overlay.
         4.  **Recomendaciones de Audio**: Música y efectos.
         5.  **Fuentes Científicas**: Un breve listado de los papers o artículos de donde se extrajo la información clave (para credibilidad).
 

@@ -59,11 +59,13 @@ Al recibir un tema, el entregable debe ser:
 
 3.  **Guion Técnico Desglosado por Segundos**:
     - `[0-3s]`:
+        - **Frase del Audio**: (La parte exacta del guion que se dice en este tramo).
         - **Visual**: (Descripción de la acción).
-        - **PROMPT IMAGEN IA**: (Prompt para generar la imagen estática).
+        - **PROMPT IMAGEN IA (Copia para cada escena)**: (Prompt para generar la imagen estática).
         - **PROMPT ANIMACIÓN**: (Instrucción para animar esa imagen en Grok/Runway. Ej: "Camera zoom in, dinosaur turns head").
-        - **Audio**: (Referencia sonora).
+        - **Audio**: (Efectos sfx).
         - **Texto**: (Overlay).
+
     - `[3-7s]`: ... (y así hasta el final).
 
 3.  **Checklist de Elementos a Grabar/Buscar**: Lista específica de clips CGI, imágenes, gráficos necesarios.
