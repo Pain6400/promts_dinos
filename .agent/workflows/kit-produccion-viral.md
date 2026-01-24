@@ -42,7 +42,7 @@ Este flujo de trabajo orquesta múltiples habilidades para crear un producto fin
                 *   **PROMPT ANIMACIÓN**: Para dar movimiento (Grok).
             *   Columnas: Tiempo | Visual | PROMPT IMAGEN | PROMPT ANIMACIÓN | Audio | Texto Overlay.
         4.  **Recomendaciones de Audio**: Música y efectos.
-        5.  **Recomendaciones de Audio**: Música y efectos.
+        5.  **Fuentes Científicas**: Un breve listado de los papers o artículos de donde se extrajo la información clave (para credibilidad).
 
 ## Invocación
 Cuando el usuario pida "Genera un Kit de Producción Viral sobre [TEMA]", sigue estos pasos rigurosamente.

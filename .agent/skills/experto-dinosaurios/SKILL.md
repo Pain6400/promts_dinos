@@ -14,8 +14,10 @@ Esta habilidad está diseñada para enriquecer la creación de prompts mediante 
 
 ## Flujo de Trabajo
 
-### 1. Investigación Paleontológica (Deep Dive)
-Usa `search_web` para encontrar información actualizada (busca papers recientes o sitios de paleoarte confiables). Puntos clave a investigar:
+### 1. Investigación Paleontológica OBLIGATORIA (Deep Dive)
+**REGLA DE ORO**: NUNCA asumas información. Debes ejecutar `search_web` buscando: "[Dinosaur Name] new discoveries scientific paper 2024 2025" antes de escribir una sola línea.
+
+Puntos a verificar con la búsqueda:
 
 *   **Periodo y Ubicación**: ¿Jurásico o Cretácico? ¿Formación rocosa? Esto define el fondo/entorno.
 *   **Anatomía Precisa**:
