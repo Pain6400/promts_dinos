@@ -15,16 +15,17 @@ Esta habilidad está diseñada para enriquecer la creación de prompts mediante 
 ## Flujo de Trabajo
 
 ### 1. Investigación Paleontológica OBLIGATORIA (Deep Dive)
-**REGLA DE ORO**: NUNCA asumas información. Debes ejecutar `search_web` buscando: "[Dinosaur Name] new discoveries scientific paper 2024 2025" antes de escribir una sola línea.
+**REGLA DE ORO**: NUNCA asumas información visual. Debes ejecutar `search_web` con consultas específicas para definir la "Identidad Visual".
 
-Puntos a verificar con la búsqueda:
+**Consultas OBLIGATORIAS**:
+1.  `[Dinosaur Name] scientifically accurate physical description paleoart 2024`
+2.  `[Dinosaur Name] skin texture feathers evidence color patterns theories`
 
-*   **Periodo y Ubicación**: ¿Jurásico o Cretácico? ¿Formación rocosa? Esto define el fondo/entorno.
-*   **Anatomía Precisa**:
-    *   *Tegumento*: ¿Tenía plumas, filamentos, escamas o placas? (Crucial para Midjourney/DALL-E).
-    *   *Tamaño real*: Comparación con humanos u otros animales.
-    *   *Rasgos distintivos*: Crestas, garras, postura.
-*   **Comportamiento**: ¿Era gregario? ¿Cazador activo o carroñero? ¿Cuidador de nidos?
+**Puntos a verificar (Checklist Visual):**
+*   **Morfología del Cráneo**: ¿Largo, corto, con crestas?
+*   **Tegumento Exacto**: ¿Plumas en todo el cuerpo o solo en brazos? ¿Escamas grandes o tipo guijarro?
+*   **Colores Teóricos**: ¿Hay estudios de melanosomas (ej. Microraptor, Borealopelta) o hipótesis basadas en el entorno?
+*   **Proporciones Reales**: Olvida el cine. ¿Patas cortas? ¿Cola rígida? ¿Cuello en S?
 
 ### 2. Paleta de Datos para Prompts
 Organiza la información en bloques útiles para "copiar y pegar" o integrar en un prompt:
