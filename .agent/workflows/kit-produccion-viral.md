@@ -32,7 +32,10 @@ Este flujo de trabajo orquesta múltiples habilidades para crear un producto fin
     *   Consolida todo en un único documento con el formato "Kit de Producción".
     *   **IMPORTANTE: Estructura del Output (Sigue este orden exacto):**
         1.  **Concepto Viral**: La idea central.
-        2.  **BLOQUE 1: GUION DE NARRACIÓN (SOLO TEXTO)**:
+        2.  **ADN DEL PERSONAJE (PROMPT MAESTRO)**:
+            *   **Definición Visual Única**: Un prompt detallado que describe *solo* al dinosaurio (colores, cicatrices, plumas).
+            *   **Instrucción**: "Usa este bloque al inicio de CADA prompt de escena para mantener la consistencia".
+        3.  **BLOQUE 1: GUION DE NARRACIÓN (SOLO TEXTO)**:
             *   Un bloque de texto plano con **SOLO lo que el narrador debe decir**.
             *   **PROHIBIDO INCLUIR**: "Narrador:", "00:00", "Escena 1", o cualquier instrucción dentro de este texto.
             *   Debe ser texto puro separado por párrafos para copiar y pegar directamente.

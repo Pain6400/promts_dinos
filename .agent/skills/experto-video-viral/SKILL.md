@@ -51,13 +51,17 @@ Al recibir un tema, el entregable debe ser:
 
 1.  **Título/Tema**: Formulado como gancho.
 
-2.  **GUION DE NARRACIÓN (SOLO TEXTO)**:
+2.  **ADN DEL PERSONAJE (PROMPT MAESTRO)**:
+    - *Instrucción*: Crea un "Master Prompt" que defina visualmente al dinosaurio (colores, cicatrices) para usarlo como base en todas las escenas.
+    - *Formato*: `[IDENTITY]: [Descripción detallada]`
+
+3.  **GUION DE NARRACIÓN (SOLO TEXTO)**:
     - *IMPORTANTE*: Proporciona esto como un bloque de texto continuo o dividido por párrafos.
     - **NO incluyas** etiquetas como "Narrador:", "Voz:", "Escena 1", ni tiempos dentro de este texto.
     - Debe ser texto puro listo para que el usuario lo seleccione, copie y pegue en la herramienta de Texto a Voz.
     - *Longitud sugerida*: Suficiente para 40-60 segundos de video (aprox 130-150 palabras).
 
-3.  **Guion Técnico Desglosado por Segundos**:
+4.  **Guion Técnico Desglosado por Segundos**:
     - `[0-3s]`:
         - **Frase del Audio**: (La parte exacta del guion que se dice en este tramo).
         - **Visual**: (Descripción de la acción).
@@ -68,8 +72,8 @@ Al recibir un tema, el entregable debe ser:
 
     - `[3-7s]`: ... (y así hasta el final).
 
-3.  **Checklist de Elementos a Grabar/Buscar**: Lista específica de clips CGI, imágenes, gráficos necesarios.
+5.  **Checklist de Elementos a Grabar/Buscar**: Lista específica de clips CGI, imágenes, gráficos necesarios.
 
-4.  **Recomendaciones de Sonido de Tendencia**: 2-3 sonidos específicos para buscar en la librería de TikTok.
+6.  **Recomendaciones de Sonido de Tendencia**: 2-3 sonidos específicos para buscar en la librería de TikTok.
 
-5.  **3 Opciones de Preguntas para los Comentarios**: Para A/B testing.
+7.  **3 Opciones de Preguntas para los Comentarios**: Para A/B testing.

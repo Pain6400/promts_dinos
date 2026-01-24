@@ -17,9 +17,9 @@ Esta habilidad está diseñada para enriquecer la creación de prompts mediante 
 ### 1. Investigación Paleontológica OBLIGATORIA (Deep Dive)
 **REGLA DE ORO**: NUNCA asumas información visual. Debes ejecutar `search_web` con consultas específicas para definir la "Identidad Visual".
 
-**Consultas OBLIGATORIAS**:
-1.  `[Dinosaur Name] scientifically accurate physical description paleoart 2024`
-2.  `[Dinosaur Name] skin texture feathers evidence color patterns theories`
+**Consultas OBLIGATORIAS** (Adapta la búsqueda al dinosaurio):
+1.  `[NOMBRE] scientifically accurate physical description latest reconstruction`
+2.  `[NOMBRE] skin texture feathers evidence recent studies`
 
 **Puntos a verificar (Checklist Visual):**
 *   **Morfología del Cráneo**: ¿Largo, corto, con crestas?
