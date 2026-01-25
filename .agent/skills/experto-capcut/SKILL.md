@@ -23,8 +23,18 @@ Antes de generar el prompt, identifica:
 ### 2. Estructura del Prompt para CapCut
 La IA de CapCut (Script-to-Video) lee todo lo que pegas como si fuera el guion. Por eso, debes entregar **dos bloques separados**:
 
-#### Bloque 1: Guion de Narración (CLEAN SCRIPT)
-*Este es el bloque que el usuario copiará y pegará en la caja de texto de CapCut. NO debe contener "Escena 1", "Visual:", ni paréntesis de instrucciones, solo el texto hablado.*
+#### Bloque 1: Guion de Narración (CLEAN SCRIPT - HUMANIZED)
+*Este es el bloque que el usuario copiará y pegará en la caja de texto. NO debe contener "Escena 1" ni instrucciones, solo el texto hablado.*
+
+**IMPORTANTE: TÉCNICA DE "HUMANIZACIÓN DE VOZ"**
+Para asegurar que la voz de IA suene natural y no robótica, aplica estos trucos de escritura en el guion:
+1.  **Puntuación Rítmica**: Usa `...` para pausas dramáticas y `.` cortos para frases tajantes.
+    *   *Ejemplo*: "No era rápido... era letal."
+2.  **Énfasis Visual**: Escribe entre signos de exclamación `¡!` las palabras clave que requieren energía, aunque no sean gritos.
+    *   *Ejemplo*: "¡Nadie! lo vio venir."
+3.  **Muletillas Naturales**: Inicia oraciones complejas con conectores hablados como "Mira,", "O sea,", "Mmm...".
+4.  **Silabeo Dramático**: Usa guiones para obligar a la IA a pronunciar lento palabras épicas.
+    *   *Ejemplo*: "Fue in-cre-í-ble."
 
 #### Bloque 2: Guía Visual y Prompts (SCENE BY SCENE)
 *   Describe escena por escena e incluye:
