@@ -33,27 +33,27 @@ Este flujo de trabajo orquesta múltiples habilidades para crear un producto fin
     *   Redacta una descripción atractiva para TikTok que incluya un "hook" escrito (primera línea).
     *   Genera una selección estratégica de hashtags (mezcla de alta competencia y nicho específico).
 
-5.  **Generación del Entregable Final**
+## 5. Generación del Entregable Final
     *   Consolida todo en un único documento con el formato "Kit de Producción".
     *   **IMPORTANTE: Estructura del Output (Sigue este orden exacto):**
         1.  **Concepto Viral**: La idea central.
-        2.  **ADN DEL PERSONAJE (PROMPT MAESTRO)**:
-            *   **Definición Visual Única**: Un prompt detallado que describe *solo* al dinosaurio (colores, cicatrices, plumas).
-            *   **Instrucción**: "Usa este bloque al inicio de CADA prompt de escena para mantener la consistencia".
+        2.  **ADN DEL PERSONAJE (PROMPT MAESTRO - MODO VIVO)**:
+            *   **Definición Visual Única**: Un prompt detallado que describe *solo* al dinosaurio vivo (colores, cicatrices, plumas, *Negative Prompt* cruciales como "no tail club").
+            *   **Instrucción**: "Usa este bloque al inicio de CADA prompt de escena VIVA para mantener la consistencia".
         3.  **BLOQUE 1: GUION DE NARRACIÓN (SOLO TEXTO)**:
             *   Un bloque de texto plano con **SOLO lo que el narrador debe decir**.
             *   **PROHIBIDO INCLUIR**: "Narrador:", "00:00", "Escena 1", o cualquier instrucción dentro de este texto.
             *   Debe ser texto puro separado por párrafos para copiar y pegar directamente.
-        4.  **BLOQUE 2: GUION TÉCNICO DETALLADO (Para el editor)**:
-            *   Esta tabla debe incluir OBLIGATORIAMENTE:
-                *   **PROMPT IMAGEN IA (Copia para cada escena)**: Para generar la estática.
-                *   **PROMPT ANIMACIÓN**: Para dar movimiento (Grok).
+        4.  **BLOQUE 2: GUION TÉCNICO DETALLADO (Full AI Generation)**:
+            *   Esta tabla debe incluir OBLIGATORIAMENTE dos tipos de prompts:
+                *   **[FOSSIL MODE]**: Prompts para generar el fósil hiperrealista (textura de piedra, museo).
+                *   **[ALIVE MODE]**: Prompts para el dinosaurio vivo (usando el ADN del personaje).
             *   Columnas: Tiempo | Frase del Audio | Visual | PROMPT IMAGEN IA (Copia para cada escena) | PROMPT ANIMACIÓN | Texto Overlay.
         5.  **Recomendaciones de Audio**: Música y efectos.
         6.  **Metadata para Redes (Habilidad: `social-content`)**:
             *   **Descripción TikTok**: Texto optimizado para la descripción del video.
             *   **Hashtags**: Lista de tags sugeridos.
-        7.  **Fuentes Científicas**: Un breve listado de los papers o artículos de donde se extrajo la información clave (para credibilidad).
+        7.  **Fuentes Científicas**: Un breve listado de los papers o artículos de donde se extrajo la información clave.
 
 ## Invocación
 Cuando el usuario pida "Genera un Kit de Producción Viral sobre [TEMA]", sigue estos pasos rigurosamente.
