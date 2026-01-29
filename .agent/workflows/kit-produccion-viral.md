@@ -22,11 +22,11 @@ Este flujo de trabajo orquesta múltiples habilidades para crear un producto fin
     *   Desarrolla un guion usando la **Estructura A/B/C** (Gancho Atómico, Desarrollo en Montaña Rusa, Cierre de Interacción).
     *   Define claramente el gancho de los primeros 3 segundos.
 
-3.  **Dirección Técnica y Edición (Habilidad: `experto-capcut`)**
-    *   Lee la habilidad `experto-capcut`.
+3.  **Dirección Técnica y Edición (Habilidades: `experto-whisk` y `experto-capcut`)**
+    *   Lee la habilidad `experto-whisk`.
     *   Añade una capa de instrucciones técnicas al guion generado en el paso 2.
-    *   Especifica qué efectos de CapCut, transiciones (zoom, cortes) y tipos de audio usar en cada segmento.
-    *   Crea los prompts visuales necesarios si se requiere generar imágenes.
+    *   Especifica efectos de transición y audio con `experto-capcut`.
+    *   **CRUCIAL**: Genera los prompts visuales separados en las 4 categorías de Whisk: Subject (Sujeto), Scene (Escena), Style (Estilo) y Text Guidance (La Idea/Prompt).
 
 4.  **Estrategia de Publicación (Habilidad: `social-content`)**
     *   Lee la habilidad `social-content`.
@@ -44,11 +44,16 @@ Este flujo de trabajo orquesta múltiples habilidades para crear un producto fin
             *   Un bloque de texto plano con **SOLO lo que el narrador debe decir**.
             *   **PROHIBIDO INCLUIR**: "Narrador:", "00:00", "Escena 1", o cualquier instrucción dentro de este texto.
             *   Debe ser texto puro separado por párrafos para copiar y pegar directamente.
-        4.  **BLOQUE 2: GUION TÉCNICO DETALLADO (Full AI Generation)**:
-            *   Esta tabla debe incluir OBLIGATORIAMENTE dos tipos de prompts:
-                *   **[FOSSIL MODE]**: Prompts para generar el fósil hiperrealista (textura de piedra, museo).
-                *   **[ALIVE MODE]**: Prompts para el dinosaurio vivo (usando el ADN del personaje).
-            *   Columnas: Tiempo | Frase del Audio | Visual | PROMPT IMAGEN IA (Copia para cada escena) | PROMPT ANIMACIÓN | Texto Overlay.
+        4.  **BLOQUE 2: GUION TÉCNICO DETALLADO (Formato Google Labs Whisk)**:
+            *   Esta tabla está optimizada para crear imágenes usando **Subject + Scene + Style**.
+            *   **Instrucción de uso**: "Configura Subject y Style UNA VEZ en Whisk si es posible. Cambia Scene y Guidance para cada toma".
+            *   **Columnas OBLIGATORIAS**:
+                *   `Time` | `Audio`
+                *   `SUBJECT (El Personaje)`: El prompt del dinosaurio (Alive Mode).
+                *   `SCENE (El Fondo)`: Descripción del entorno sin el personaje.
+                *   `STYLE (El Look)`: Estilo artístico consistente.
+                *   `TEXT GUIDANCE (La Idea/Acción)`: Lo que el usuario escribe en la caja de texto principal (acción, narrativa).
+                *   `OVERLAY`: Texto en pantalla.
         5.  **Recomendaciones de Audio**: Música y efectos.
         6.  **Metadata para Redes (Habilidad: `social-content`)**:
             *   **Descripción TikTok**: Texto optimizado para la descripción del video.

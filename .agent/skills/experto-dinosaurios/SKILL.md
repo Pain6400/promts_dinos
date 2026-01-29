@@ -31,14 +31,15 @@ Esta habilidad está diseñada para enriquecer la creación de prompts mediante 
 La precisión científica no sirve si la IA no la entiende. Traduce tus hallazgos a instrucciones visuales claras:
 *   **Prompt Negativo (Lo que NO debe tener)**: Fundamental para evitar errores comunes de las IAs (ej. "No tail club" para Nodosaurios, "No pronated hands" para Terópodos).
 *   **Detalles Distintivos**: Busca "rasgos únicos" que fuercen a la IA a diferenciarse del modelo genérico (ej. "shoulder spikes", "sail-back", "feathered arms only").
-*   **Estilos de Fósil**: Define cómo pedir un fósil realista ("museum lighting", "rock texture", "embedded in matrix").
+
 
 ### 3. Paleta de Datos para Prompts
 Organiza la información en bloques listos para usar:
 
-*   **ADN Visual (Prompt Maestro)**: Descripción física completa e inequívoca.
-*   **Atmósfera**: Entorno paleoecológico correcto (ej. "humid fern forest", "arid desert scrub").
-*   **Acción**: Comportamiento basado en fósiles (ej. "sleeping posture", "eating cycads").
+*   **ADN Visual (Whisk Subject)**: Descripción ANATÓMICA DURA + Rasgos únicos. Prioriza la forma sobre el color aquí. Ejemplo: "Heavy armor plates, shoulder spikes, stiff tail (no club), beak mouth". (Ideal para el campo 'Subject').
+    *   *Tip*: Si puedes, busca una imagen de referencia real para el usuario.
+*   **Atmósfera (Whisk Scene)**: Entorno paleoecológico correcto SIN el dinosaurio (ideal para el campo 'Scene').
+*   **Acción (Whisk Guidance)**: Comportamiento basado en fósiles (ej. "sleeping posture", "eating cycads").
 
 ### 4. Entregable al Usuario
 Proporciona un resumen estructurado:
@@ -49,7 +50,7 @@ Proporciona un resumen estructurado:
     *   *Rasgos negativos*: Lo que la IA suele poner mal y hay que prohibir (Negative Prompt).
 3.  **Sugerencias de Prompt**:
     *   *Estilo Realista (Alive Mode)*: "Photorealistic [Dinosaur Name] in [Environment], [Distinctive Features], cinematic lighting..."
-    *   *Estilo Fósil (Fossil Mode)*: "Macro photography of [Dinosaur Name] fossil mummy, stone texture, museum spotlight, hyper-realistic..."
+
 
 ## Ejemplo de Pensamiento
 > "El usuario quiere un prompt de Spinosaurus. Investigaré las teorías más recientes sobre su cola de tritón y postura semi-acuática (paper de 2020/2021). Descartaré la postura de 'monstruo de película' antigua. Sugeriré entorno de manglar pantanoso."
