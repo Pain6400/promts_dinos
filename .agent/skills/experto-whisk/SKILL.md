@@ -1,69 +1,50 @@
 ---
 name: experto-whisk
-description: Especialista en generar los inputs óptimos para la herramienta Google Labs Whisk (Subject, Scene, Style). Desglosa las escenas en componentes visuales precisos para maximizar la calidad de la generación de imágenes mediante fusión de conceptos.
+description: Especialista en generar los inputs óptimos para la herramienta Google Labs Whisk. Genera siempre 4 prompts separados: Subject, Scene, Style y el Prompt Principal (que mezcla todo).
 ---
 
 # Experto en Google Labs Whisk
 
-Esta habilidad está diseñada para descomponer una solicitud visual en los tres pilares fundamentales que utiliza Google Labs Whisk: **Subject** (Sujeto), **Scene** (Escena) y **Style** (Estilo), además del **Text Guidance** (Guía de Texto) para acciones específicas.
+Esta habilidad está diseñada para descomponer una solicitud visual en los **4 componentes obligatorios** que requiere la herramienta Whisk.
 
-## Cuándo usar esta habilidad
-- Cuando el usuario vaya a utilizar **Google Labs Whisk** para generar sus imágenes.
-- Cuando se requiera un control granular sobre el personaje, el fondo y el estilo artístico por separado.
-- Para mantener una consistencia visual perfecta al reusar el mismo "Subject" y "Style" en diferentes "Scenes".
+## La Regla de los 4 Prompts
+
+Para CADA imagen que generes, debes entregar siempre estos 4 campos por separado. Whisk funciona mezclando estas "capas" de información.
+
+### 1. SUBJECT (El Sujeto / Personaje)
+*   **¿Qué es?**: Indica de qué va la imagen (personaje, objeto).
+*   **Tu objetivo**: Definir la anatomía y apariencia física del personaje SIN fondo ni acción.
+*   **Formato**: Descripción anatómica precisa.
+*   *Ejemplo*: "Anatomically accurate Archaeopteryx, small raven-sized dinosaur, black matte feathers, long bony tail, sharp teeth in snout, clawed wings."
+
+### 2. SCENE (La Escena / Fondo)
+*   **¿Qué es?**: Dónde aparecerá el sujeto.
+*   **Tu objetivo**: Definir el entorno, iluminación y clima SIN el personaje.
+*   **Formato**: Descripción de paisaje y atmósfera.
+*   *Ejemplo*: "Jurassic Solnhofen lagoon, shallow tropical water, ancient cycads, bright sunny day, bokeh background."
+
+### 3. STYLE (El Estilo / Look)
+*   **¿Qué es?**: La estética, material o técnica.
+*   **Tu objetivo**: Definir el filtro artístico.
+*   **Formato**: Estilo artístico + medio.
+*   *Ejemplo*: "Hyper-realistic 8k nature photography, cinematic lighting, National Geographic documentary style."
+
+### 4. PROMPT PRINCIPAL (La Mezcla / Acción)
+*   **¿Qué es?**: El cuadro de texto principal donde el usuario escribe lo que sucede.
+*   **Tu objetivo**: Describir la **ACCIÓN** y cómo interactúan las partes. Este es el prompt que "mezcla todo".
+*   **Formato**: `[Sujeto] está [Haciendo algo] en [Contexto].`
+*   *Ejemplo*: "A black Archaeopteryx is clumsy flapping its wings trying to take off from the water, water splashing, dynamic motion blur."
 
 ## Flujo de Trabajo
 
-### 1. Definición de los 4 Campos Maestros
+1.  **Define los Assets Maestros**: Subject y Style suelen ser constantes para todo un video.
+2.  **Define las Variables**: Scene y Prompt Principal cambian toma a toma.
+3.  **Formato de Salida**: Usa siempre una tabla o lista clara que separe estos 4 elementos.
 
-Para cada imagen necesaria, debes generar CUATRO outputs de texto específicos. El usuario podrá usarlos como prompts de texto o como guía para buscar/subir imágenes de referencia.
+## Formato de Salida (Tabla Obligatoria)
 
-#### A. SUBJECT (El "Qué" / Personaje)
-**CRÍTICO PARA LA PRECISIÓN**: Este es el campo más importante. Si la anatomía falla, falla todo.
-*   **Estrategia 1 (Texto Puro)**: Describe la *geometría* y los *rasgos distintivos* antes que el color. Usa términos técnicos visuales.
-    *   *Formato*: "Anatomically accurate [Dinosaur/Character], [Distinctive Features (e.g., shoulder spikes)], [Body Shape], [Skin Texture], neutral background."
-*   **Estrategia 2 (Imagen de Referencia - RECOMENDADA)**: Si la fidelidad científica es vital, instruye al usuario para que *suba una imagen* de un esqueleto, juguete o reconstrucción 3D válida en el campo 'Subject', en lugar de solo texto.
-*   *Definición Oficial*: "¡Esto indica de qué va la imagen! Puede tratarse de un personaje, de objetos o de una combinación de ambos."
-*   *Estrategia*: Describe el dinosaurio/personaje con precisión anatómica.
-*   *Tip*: Puedes recomendar subir una imagen de referencia aquí (la IA la usa como guía direccional).
+Cuando generes guiones, usa esta estructura exacta:
 
-#### B. SCENE (El "Dónde" / Fondo)
-Define el entorno SIN el personaje.
-*   *Formato*: "[Environment description], [Lighting], [Weather], empty landscape, no characters."
-*   *Definición Oficial*: "Dónde aparecerá el sujeto. ¿En una alfombra roja? ¿En una postal de vacaciones con relieve?"
-*   *Estrategia*: Describe el entorno paleoecológico. Whisk colocará al Sujeto AQUÍ.
-*   *Tip*: Puedes añadir personajes secundarios en el fondo aquí si es necesario.
-
-#### C. STYLE (El "Cómo" / Estética)
-Define la dirección artística.
-*   *Formato*: "[Artistic Style], [Medium], [Color Palette], [Mood], highly detailed."
-*   *Definición Oficial*: "Añadir algunas notas sobre la estética, el material o la técnica... Especifica las preferencias que más te interesen."
-*   *Estrategia*: Define el medio artístico (e.g., "National Geographic photography", "Oil painting", "3D Render").
-
-#### D. IDEA / LENGUAJE NATURAL (La Acción)
-Este campo es donde se escribe la narrativa o "idea" adicional en lenguaje natural.
-*   *Documentación Oficial*: "Puedes añadir más detalles en un lenguaje natural (por ejemplo, 'nuestros sujetos están celebrando una cena de cumpleaños') y Whisk intentará incluirlos."
-*   *Uso en Dinos*: Úsalo para describir la **acción** (corriendo, durmiendo, rugiendo), la **interacción** con otros sujetos si los hay, y el **ángulo de cámara**.
-*   *Formato*: "The [Subject] is [Action]. [Context details]. [Camera Angle]."
-
-## 2. Estrategia de Consistencia
-
-Para un video o kit viral, define los "Assets Maestros" al principio:
-
-1.  **Master Subject**: Un único prompt de sujeto que se reciclará.
-2.  **Master Style**: Un único prompt de estilo para unificar el video.
-3.  **Dynamic Scenes**: Lo único que cambia drásticamente cuadro a cuadro es la Escena y la Guía de Texto.
-
-## 3. Formato de Salida en Tablas
-
-Cuando generes guiones técnicos para Whisk, usa esta estructura de columnas:
-
-| Time | Audio | **SUBJECT** (Who) | **SCENE** (Where) | **STYLE** (How) | **IDEA / PROMPT** (What happen) |
+| Time | Audio | **SUBJECT** (Quién) | **SCENE** (Dónde) | **STYLE** (Cómo) | **PROMPT PRINCIPAL** (La Acción/Mezcla) |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 0-3s | Texto... | [Dino Description] | Jungle clearing | Cinematic | The dinosaur is roaring at camera. |
-
-## Consejos Pro para Whisk
-*   **Subject Anatomy**: Si el dinosaurio sale deforme, añade palabras clave de forma: "squat body", "short neck", "wide torso".
-*   **Reference Images**: Para máxima fidelidad, busca en Google "[Dinosaur Name] 3d model white background", guarda esa imagen y úsala en el campo **Subject** de Whisk.
-*   **Scene**: Usa "Depth of field" o "Blurred background" para enfocar la atención. NO lo dejes vacío si quieres un entorno realista; si lo dejas vacío, Whisk tiende a simplificar la iluminación del sujeto.
-*   **Style**: Sé específico con la iluminación ("Bioluminescent", "Golden Hour").
+| 0-3s | [SFX] | [Descripción Fija del Dino] | [Descripción del Fondo] | [Estilo Fijo] | [Descripción de la Acción Específica] |

@@ -25,8 +25,7 @@ Este flujo de trabajo orquesta múltiples habilidades para crear un producto fin
 3.  **Dirección Técnica y Edición (Habilidades: `experto-whisk` y `experto-capcut`)**
     *   Lee la habilidad `experto-whisk`.
     *   Añade una capa de instrucciones técnicas al guion generado en el paso 2.
-    *   Especifica efectos de transición y audio con `experto-capcut`.
-    *   **CRUCIAL**: Genera los prompts visuales separados en las 4 categorías de Whisk: Subject (Sujeto), Scene (Escena), Style (Estilo) y Text Guidance (La Idea/Prompt).
+    *   **CRUCIAL**: Debes generar los prompts visuales siguiendo la "Regla de los 4 Prompts" de Whisk: Subject (Sujeto), Scene (Escena), Style (Estilo) y Prompt Principal (La Mezcla).
 
 4.  **Estrategia de Publicación (Habilidad: `social-content`)**
     *   Lee la habilidad `social-content`.
@@ -45,14 +44,14 @@ Este flujo de trabajo orquesta múltiples habilidades para crear un producto fin
             *   **PROHIBIDO INCLUIR**: "Narrador:", "00:00", "Escena 1", o cualquier instrucción dentro de este texto.
             *   Debe ser texto puro separado por párrafos para copiar y pegar directamente.
         4.  **BLOQUE 2: GUION TÉCNICO DETALLADO (Formato Google Labs Whisk)**:
-            *   Esta tabla está optimizada para crear imágenes usando **Subject + Scene + Style**.
-            *   **Instrucción de uso**: "Configura Subject y Style UNA VEZ en Whisk si es posible. Cambia Scene y Guidance para cada toma".
+            *   Esta tabla está optimizada para la herramienta Whisk.
+            *   **Instrucción de uso**: "Copia y pega cada columna en su campo correspondiente en Whisk".
             *   **Columnas OBLIGATORIAS**:
                 *   `Time` | `Audio`
-                *   `SUBJECT (El Personaje)`: El prompt del dinosaurio (Alive Mode).
-                *   `SCENE (El Fondo)`: Descripción del entorno sin el personaje.
-                *   `STYLE (El Look)`: Estilo artístico consistente.
-                *   `TEXT GUIDANCE (La Idea/Acción)`: Lo que el usuario escribe en la caja de texto principal (acción, narrativa).
+                *   `SUBJECT (Sujeto)`: El prompt anatómico del personaje.
+                *   `SCENE (Escena)`: Descripción del entorno (fondo).
+                *   `STYLE (Estilo)`: Estilo artístico.
+                *   `PROMPT PRINCIPAL (La Mezcla)`: Acción específica y narrativa de la toma.
                 *   `OVERLAY`: Texto en pantalla.
         5.  **Recomendaciones de Audio**: Música y efectos.
         6.  **Metadata para Redes (Habilidad: `social-content`)**:
