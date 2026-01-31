@@ -27,7 +27,7 @@ Desglosa el tema en esta estructura infalible para TikTok:
 
 **A - Gancho Atómico (Seg 0-3):**
 Debe ser una afirmación impactante, una pregunta retórica visual o un "¿Sabías que...?" con un cambio visual abrupto.
-- *Ejemplo para tu nicho*: (Pantalla en negro, sonido de suspense) Texto superpuesto: "EL T-REX NO PODÍA HACER ESTO... Y POR ESO SE EXTINGUIÓ". No es una pregunta, es una afirmación que genera duda inmediata.
+- *Ejemplo*: (Pantalla en negro, sonido de suspense) Texto superpuesto: "EL [DINOSAURIO/TEMA] NO PODÍA HACER ESTO... Y POR ESO SE EXTINGUIÓ". No es una pregunta, es una afirmación que genera duda inmediata.
 
 **B - Desarrollo en Montaña Rusa (Seg 3-25):**
 - **B1 - Confirmación Rápida**: Da el primer dato sorpresa (ej: "No podía correr a más de 20 km/h").
@@ -51,9 +51,9 @@ Al recibir un tema, el entregable debe ser:
 
 1.  **Título/Tema**: Formulado como gancho.
 
-2.  **ADN DEL PERSONAJE (PROMPT MAESTRO)**:
-    - *Instrucción*: Crea un "Master Prompt" que defina visualmente al dinosaurio (colores, cicatrices) para usarlo como base en todas las escenas.
-    - *Formato*: `[IDENTITY]: [Descripción detallada]`
+2.  **ADN DEL PERSONAJE (IMAGEN MAESTRA)**:
+    - *Instrucción*: Genera una imagen de referencia con su prompt correspondiente. Esta imagen servirá como "Subject" para herramientas de IA (Whisk).
+    - *Formato*: `[IMAGEN GENERADA]: [Ruta/Nombre]` + `[PROMPT USADO]`
 
 3.  **GUION DE NARRACIÓN (SOLO TEXTO)**:
     - *IMPORTANTE*: Proporciona esto como un bloque de texto continuo o dividido por párrafos.

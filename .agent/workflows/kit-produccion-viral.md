@@ -24,8 +24,9 @@ Este flujo de trabajo orquesta múltiples habilidades para crear un producto fin
 
 3.  **Dirección Técnica y Edición (Habilidades: `experto-whisk` y `experto-capcut`)**
     *   Lee la habilidad `experto-whisk`.
+    *   **GENERACIÓN DE IMAGEN (SUBJECT)**: Usa la herramienta `generate_image` para crear una o más imágenes del personaje/dinosaurio en fondo neutro. Esta imagen será el "Subject" en Whisk.
     *   Añade una capa de instrucciones técnicas al guion generado en el paso 2.
-    *   **CRUCIAL**: Debes generar los prompts visuales siguiendo la "Regla de los 4 Prompts" de Whisk: Subject (Sujeto), Scene (Escena), Style (Estilo) y Prompt Principal (La Mezcla).
+    *   **CRUCIAL**: Debes generar los prompts visuales siguiendo la "Regla de los 4 Prompts" de Whisk: Subject (Imagen Proporcionada), Scene (Escena), Style (Estilo Jurásico) y Prompt Principal (La Mezcla).
 
 4.  **Estrategia de Publicación (Habilidad: `social-content`)**
     *   Lee la habilidad `social-content`.
@@ -36,28 +37,32 @@ Este flujo de trabajo orquesta múltiples habilidades para crear un producto fin
     *   Consolida todo en un único documento con el formato "Kit de Producción".
     *   **IMPORTANTE: Estructura del Output (Sigue este orden exacto):**
         1.  **Concepto Viral**: La idea central.
-        2.  **ADN DEL PERSONAJE (PROMPT MAESTRO - MODO VIVO)**:
-            *   **Definición Visual Única**: Un prompt detallado que describe *solo* al dinosaurio vivo (colores, cicatrices, plumas, *Negative Prompt* cruciales como "no tail club").
-            *   **Instrucción**: "Usa este bloque al inicio de CADA prompt de escena VIVA para mantener la consistencia".
+        2.  **ADN DEL PERSONAJE (IMAGEN DE REFERENCIA - SUBJECT)**:
+            *   **Imagen Generada**: [RUTA ABSOLUTA DEL ARCHIVO GENERADO] (Ej: `c:/Users/.../nombre_imagen.png`)
+            *   *Nota*: Esta imagen debe usarse en la casilla "Subject" de Whisk. Si hay múltiples personajes, incluye una imagen por cada uno.
+            *   **Definición Visual (Prompt usado)**: El prompt que usaste para generar la imagen (solo referencia).
         3.  **BLOQUE 1: GUION DE NARRACIÓN (SOLO TEXTO)**:
             *   Un bloque de texto plano con **SOLO lo que el narrador debe decir**.
             *   **PROHIBIDO INCLUIR**: "Narrador:", "00:00", "Escena 1", o cualquier instrucción dentro de este texto.
             *   Debe ser texto puro separado por párrafos para copiar y pegar directamente.
-        4.  **BLOQUE 2: GUION TÉCNICO DETALLADO (Formato Google Labs Whisk)**:
+        4.  **ESTILO VISUAL GLOBAL (Prompt Único)**:
+            *   **Instrucción**: Define un único prompt de estilo para todo el video para evitar redundancias.
+            *   **Prompt**: [INSERTA AQUÍ EL PROMPT DE ESTILO JURÁSICO]
+        5.  **BLOQUE 2: GUION TÉCNICO DETALLADO (Formato Google Labs Whisk)**:
             *   Esta tabla está optimizada para la herramienta Whisk.
             *   **Instrucción de uso**: "Copia y pega cada columna en su campo correspondiente en Whisk".
             *   **Columnas OBLIGATORIAS**:
                 *   `Time` | `Audio`
-                *   `SUBJECT (Sujeto)`: El prompt anatómico del personaje.
-                *   `SCENE (Escena)`: Descripción del entorno (fondo).
-                *   `STYLE (Estilo)`: Estilo artístico.
-                *   `PROMPT PRINCIPAL (La Mezcla)`: Acción específica y narrativa de la toma.
+                *   `SUBJECT (Sujeto)`: [IMAGEN DEL PERSONAJE]
+                *   `SCENE (Escena)`: Descripción del entorno.
+                *   `PROMPT PRINCIPAL (La Mezcla)`: Acción específica.
                 *   `OVERLAY`: Texto en pantalla.
-        5.  **Recomendaciones de Audio**: Música y efectos.
-        6.  **Metadata para Redes (Habilidad: `social-content`)**:
+                *   *(Nota: La columna STYLE se omite intencionalmente, usa el Estilo Global)*.
+        6.  **Recomendaciones de Audio**: Música y efectos.
+        7.  **Metadata para Redes (OBLIGATORIO)**:
             *   **Descripción TikTok**: Texto optimizado para la descripción del video.
             *   **Hashtags**: Lista de tags sugeridos.
-        7.  **Fuentes Científicas**: Un breve listado de los papers o artículos de donde se extrajo la información clave.
+        8.  **Fuentes Científicas**: Un breve listado de los papers o artículos de donde se extrajo la información clave.
 
 ## Invocación
 Cuando el usuario pida "Genera un Kit de Producción Viral sobre [TEMA]", sigue estos pasos rigurosamente.

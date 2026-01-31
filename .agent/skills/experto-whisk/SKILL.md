@@ -12,10 +12,10 @@ Esta habilidad está diseñada para descomponer una solicitud visual en los **4 
 Para CADA imagen que generes, debes entregar siempre estos 4 campos por separado. Whisk funciona mezclando estas "capas" de información.
 
 ### 1. SUBJECT (El Sujeto / Personaje)
-*   **¿Qué es?**: Indica de qué va la imagen (personaje, objeto).
-*   **Tu objetivo**: Definir la anatomía y apariencia física del personaje SIN fondo ni acción.
-*   **Formato**: Descripción anatómica precisa.
-*   *Ejemplo*: "Anatomically accurate Archaeopteryx, small raven-sized dinosaur, black matte feathers, long bony tail, sharp teeth in snout, clawed wings."
+*   **¿Qué es?**: Indica de qué va la imagen (personaje, objeto). Puede ser un PROMPT DE TEXTO o una IMAGEN DE REFERENCIA.
+*   **Tu objetivo**: Definir la anatomía y apariencia física del personaje. Si el flujo incluye `generate_image`, aquí iría la imagen generada.
+*   **Formato**: Descripción anatómica precisa O Referencia a Imagen.
+*   *Ejemplo*: "Anatomically accurate Archaeopteryx..." O "[IMAGEN GENERADA: dino_ref.png]"
 
 ### 2. SCENE (La Escena / Fondo)
 *   **¿Qué es?**: Dónde aparecerá el sujeto.
@@ -27,7 +27,7 @@ Para CADA imagen que generes, debes entregar siempre estos 4 campos por separado
 *   **¿Qué es?**: La estética, material o técnica.
 *   **Tu objetivo**: Definir el filtro artístico.
 *   **Formato**: Estilo artístico + medio.
-*   *Ejemplo*: "Hyper-realistic 8k nature photography, cinematic lighting, National Geographic documentary style."
+*   *Ejemplo (Jurásico)*: "Jurassic World movie style, cinematic lighting, hyperrealistic, 8k, detailed texture."
 
 ### 4. PROMPT PRINCIPAL (La Mezcla / Acción)
 *   **¿Qué es?**: El cuadro de texto principal donde el usuario escribe lo que sucede.
@@ -43,8 +43,10 @@ Para CADA imagen que generes, debes entregar siempre estos 4 campos por separado
 
 ## Formato de Salida (Tabla Obligatoria)
 
-Cuando generes guiones, usa esta estructura exacta:
+Cuando generes guiones, usa esta estructura exacta (Nota: El Estilo se define globalmente si así lo pide el workflow):
 
-| Time | Audio | **SUBJECT** (Quién) | **SCENE** (Dónde) | **STYLE** (Cómo) | **PROMPT PRINCIPAL** (La Acción/Mezcla) |
-| :--- | :--- | :--- | :--- | :--- | :--- |
-| 0-3s | [SFX] | [Descripción Fija del Dino] | [Descripción del Fondo] | [Estilo Fijo] | [Descripción de la Acción Específica] |
+**Estilo Global**: [Prompt de Estilo]
+
+| Time | Audio | **SUBJECT** (Quién) | **SCENE** (Dónde) | **PROMPT PRINCIPAL** (La Acción/Mezcla) |
+| :--- | :--- | :--- | :--- | :--- |
+| 0-3s | [SFX] | [Descripción/Imagen] | [Descripción del Fondo] | [Descripción de la Acción Específica] |

@@ -36,8 +36,10 @@ La precisión científica no sirve si la IA no la entiende. Traduce tus hallazgo
 ### 3. Paleta de Datos para Prompts
 Organiza la información en bloques listos para usar:
 
-*   **ADN Visual (Whisk Subject)**: Descripción ANATÓMICA DURA + Rasgos únicos. Prioriza la forma sobre el color aquí. Ejemplo: "Heavy armor plates, shoulder spikes, stiff tail (no club), beak mouth". (Ideal para el campo 'Subject').
-    *   *Tip*: Si puedes, busca una imagen de referencia real para el usuario.
+*   **ADN Visual (Whisk Subject -> IMAGEN GENERADA)**:
+    *   **ACCIÓN**: Usa la herramienta `generate_image` para crear una imagen de referencia del dinosaurio en un fondo neutro (ej. "white background, studio lighting").
+    *   **Prompt para la generación**: Usa la descripción anatómica dura + rasgos únicos. Ejemplo: "Full body shot of Borealopelta markmitchelli, heavy armor plates, shoulder spikes, stiff tail (no club), beak mouth, photorealistic, 8k, white background".
+    *   **Salida**: Guarda la imagen y referénciala en el entregable final.
 *   **Atmósfera (Whisk Scene)**: Entorno paleoecológico correcto SIN el dinosaurio (ideal para el campo 'Scene').
 *   **Acción (Whisk Guidance)**: Comportamiento basado en fósiles (ej. "sleeping posture", "eating cycads").
 
@@ -48,8 +50,10 @@ Proporciona un resumen estructurado:
 2.  **Detalles Visuales Clave (Para IA)**:
     *   *Rasgos positivos*: Lo que sí tiene.
     *   *Rasgos negativos*: Lo que la IA suele poner mal y hay que prohibir (Negative Prompt).
-3.  **Sugerencias de Prompt**:
-    *   *Estilo Realista (Alive Mode)*: "Photorealistic [Dinosaur Name] in [Environment], [Distinctive Features], cinematic lighting..."
+3.  **Sugerencias de Prompt para la Herramienta**:
+    *   *Subject*: [IMAGEN GENERADA DEL DINOSAURIO]
+    *   *Style*: "Jurassic World movie style, cinematic lighting, hyperrealistic, 8k, detailed texture" (Estilo Jurásico por defecto).
+    *   *Alive Mode*: "Photorealistic [Dinosaur Name] in [Environment], [Distinctive Features], cinematic lighting..."
 
 
 ## Ejemplo de Pensamiento
