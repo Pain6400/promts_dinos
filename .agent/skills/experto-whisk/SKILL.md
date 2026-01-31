@@ -47,6 +47,6 @@ Cuando generes guiones, usa esta estructura exacta (Nota: El Estilo se define gl
 
 **Estilo Global**: [Prompt de Estilo]
 
-| Time | Audio | **SUBJECT** (Quién) | **SCENE** (Dónde) | **PROMPT PRINCIPAL** (La Acción/Mezcla) |
+| Time | Audio | **SCENE** (Dónde) | **PROMPT PRINCIPAL** (La Acción/Mezcla) | **PROMPT DE ANIMACIÓN** (Movimiento) |
 | :--- | :--- | :--- | :--- | :--- |
-| 0-3s | [SFX] | [Descripción/Imagen] | [Descripción del Fondo] | [Descripción de la Acción Específica] |
+| 0-3s | [SFX] | [Descripción del Fondo] | [Descripción de la Acción Específica] | [Dinosaurio ruge/camina hacia cámara...] |

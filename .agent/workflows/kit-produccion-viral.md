@@ -51,13 +51,13 @@ Este flujo de trabajo orquesta múltiples habilidades para crear un producto fin
         5.  **BLOQUE 2: GUION TÉCNICO DETALLADO (Formato Google Labs Whisk)**:
             *   Esta tabla está optimizada para la herramienta Whisk.
             *   **Instrucción de uso**: "Copia y pega cada columna en su campo correspondiente en Whisk".
+            *   *Nota*: El **SUBJECT** (Personaje) y el **STYLE** (Estilo) son fijos, usa los definidos arriba.
             *   **Columnas OBLIGATORIAS**:
                 *   `Time` | `Audio`
-                *   `SUBJECT (Sujeto)`: [IMAGEN DEL PERSONAJE]
                 *   `SCENE (Escena)`: Descripción del entorno.
-                *   `PROMPT PRINCIPAL (La Mezcla)`: Acción específica.
+                *   `PROMPT PRINCIPAL (La Mezcla)`: Acción específica y narrativa de la toma.
+                *   `PROMPT DE ANIMACIÓN`: Instrucción CLARA de qué debe hacer el dinosaurio (moverse, rugir, comer, etc.) para guiar el movimiento.
                 *   `OVERLAY`: Texto en pantalla.
-                *   *(Nota: La columna STYLE se omite intencionalmente, usa el Estilo Global)*.
         6.  **Recomendaciones de Audio**: Música y efectos.
         7.  **Metadata para Redes (OBLIGATORIO)**:
             *   **Descripción TikTok**: Texto optimizado para la descripción del video.
