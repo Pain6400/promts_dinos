@@ -1,0 +1,9 @@
+{
+    "name": "gestor-ideas",
+    "version": "1.0.0",
+    "description": "Skill to manage ideas in Excel",
+    "main": "manage_ideas.js",
+    "dependencies": {
+        "xlsx": "^0.18.5"
+    }
+}
