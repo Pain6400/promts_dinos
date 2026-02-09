@@ -1,51 +1,53 @@
 ---
-description: Genera imágenes para un carrusel de TikTok basado en una idea específica, asegurando precisión científica y calidad visual.
+description: Genera prompts optimizados para carruseles de TikTok, integrando precisión científica y estructura para herramientas como Whisk.
 ---
 
-# Generación de Imágenes para Carrusel de TikTok
+# Generación de Prompts para Carrusel de TikTok (Whisk Edition)
 
-Este workflow toma una idea o lista de diapositivas proporcionada por el usuario y genera las imágenes correspondientes utilizando la herramienta de generación de imágenes y los conocimientos de la skill `experto-dinosaurios`.
+Este workflow toma una idea o lista de diapositivas y genera los **prompts detallados** necesarios para crear las imágenes, utilizando la estructura de la skill `experto-whisk` y el rigor científico de `experto-dinosaurios`.
+
+NO generes imágenes directamente. Tu objetivo es entregar los "Ingredientes" (Prompts) perfectos.
 
 ## Paso 1: Confirmar Detalles del Carrusel
-Solicita al usuario la idea central o el guion de las diapositivas si no lo ha proporcionado aún.
-- Si el input es solo un tema (ej: "T-Rex"), elabora rápidamente 3-5 escenas clave.
-- Confirma si prefiere estilo **Fotorealista** o **Ilustración Artística**.
+Solicita al usuario la idea central o el guion de las diapositivas.
+- Si es solo un tema, elabora 3-5 escenas clave.
+- Confirma estilo: **Fotorealista** o **Ilustración Artística**.
 
-## Paso 2: Diseño de Prompts (Modo Experto)
-Para cada diapositiva, redacta un prompt de imagen optimizado.
-**Instrucciones críticas (basado en `experto-dinosaurios`):**
-1.  **Encuadre de Cuerpo Completo:** SIEMPRE incluye "Full body shot", "Wide angle", o "Distance view" para asegurar que el dinosaurio se vea completo de cabeza a cola. Evita primeros planos extremos a menos que sea explícitamente solicitado.
-2.  **Anatomía Correcta:** Verifica si el dinosaurio tenía plumas, postura correcta de las manos (palmas hacia adentro, no abajo), etc.
-3.  **Entorno:** Flora y fauna coherente con el periodo (ej: Cretácico, sin pasto).
-4.  **Estilo Visual:** Usa palabras clave como "National Geographic photography", "cinematic lighting", "highly detailed", "8k", "dramatic angle".
+## Paso 2: Investigación Científica (Skill `experto-dinosaurios`)
+Antes de escribir cualquier prompt, utiliza los principios de la skill `experto-dinosaurios` para verificar:
+- **Anatomía:** ¿Plumas? ¿Postura de manos? ¿Rasgos únicos (crestas, púas)?
+- **Entorno:** Fauna y flora correcta del periodo geológico.
+- **Evita Mitos:** Descarta ideas obsoletas (ej. T-Rex erguido como canguro). **INVESTIGACIÓN OBLIGATORIA**: Tu máxima prioridad es la fidelidad científica. No crees "monstruos de película" (estilo Jurassic Park) a menos que sea una comparación explícita. El dinosaurio debe verse como era en la vida real.
 
-*Ejemplo de estructura:*
-`Full body shot of [Dinosaurio] in [Acción/Entorno]. [Detalles anatómicos]. [Iluminación/Estilo]. Aspect ratio 9:16 (vertical) for TikTok.`
+## Paso 3: Estructuración Whisk (Skill `experto-whisk`)
+Para cada diapositiva, genera los 4 campos obligatorios definidos en la skill `experto-whisk`.
+Asegúrate de que los prompts estén en **INGLÉS** para máxima compatibilidad con modelos de imagen.
 
-## Paso 3: Generación de Imágenes
-Utiliza la herramienta `generate_image` para crear cada una de las imágenes.
-*Nota: Genera una por una o en lotes pequeños para no saturar.*
+1.  **SUBJECT (El Personaje):** Descripción anatómica detallada y aislada. Ejemplo: *"Anatomically accurate Microraptor, iridescent black feathers, four wings layout..."*
+2.  **SCENE (El Fondo):** Descripción del entorno SIN el dinosaurio. Iluminación, clima, vegetación. Ejemplo: *"Ancient Cretaceous forest, giant ferns, misty morning light, bokeh background."*
+3.  **STYLE (El Estilo):** Define UN SOLO estilo global para todo el carrusel (Estilo Jurásico/Realista). Este NO va en la tabla, sino al inicio.
+4.  **PROMPT PRINCIPAL (La Acción):** Cómo el Subject interactúa con la Scene. Ejemplo: *"Microraptor gliding down from a tall tree branch in the misty forest."*
+5.  **SLIDE/GANCHO:** La primera diapositiva (Slide 1) SIEMPRE debe ser un "Hook" visual de alto impacto para atraer gente.
+6.  **NOMBRES:** En la columna "Slide", usa siempre el nombre del dinosaurio en **INGLÉS** (Scientific Name).
 
-- **ImageName:** `carrusel_[tema]_slide_[numero]`
-- **Prompt:** El texto generado en el Paso 2.
-
-## Paso 4: Entrega Estructurada y Revisión
-Presenta el resultado final en un formato organizado que incluya texto para el post y detalles de las imágenes.
+## Paso 4: Entrega Final
+Presenta el resultado en una tabla limpia para que el usuario pueda copiar y pegar fácilmente.
 
 **Formato de Salida Obligatorio:**
 
 ### **Título del Carrusel:**
-*(Un título atractivo y viral)*
+*(Título viral sugerido)*
 
-### **Descripción General:**
-*(Texto para la descripción del video de TikTok, incluyendo gancho y llamado a la acción)*
+### **Descripción y Hashtags:**
+*(Texto sugerido para el post de TikTok + Lista de hashtags)*
 
-### **Hashtags:**
-*(Lista de 5-10 hashtags relevantes y virales)*
+### **Tabla de Prompts (Whisk):**
 
-### **Detalle de las Imágenes:**
-*(Para cada imagen generada:)*
-- **Slide X:** [Imagen Generada]
-- **Descripción de la Imagen:** *(Explicación breve de lo que se ve, datos curiosos o el texto que debería ir en la imagen)*
+**Global Style (Jurassic Aesthetic):**
+*(Ejemplo: National Geographic wildlife photography, Jurassic period, 8k, photorealistic, cinematic lighting, hyper-detailed texture)*
 
-- Si alguna imagen tiene errores anatómicos graves o "alucinaciones", ofrece regenerarla ajustando el prompt.
+| Slide (English Name) | SUBJECT (Personaje) | SCENE (Fondo) | PROMPT PRINCIPAL (Acción) |
+| :--- | :--- | :--- | :--- |
+| 1 (Hook / Dino Name) | ... | ... | ... |
+| 2 (Dino Name) | ... | ... | ... |
+| ... | ... | ... | ... |

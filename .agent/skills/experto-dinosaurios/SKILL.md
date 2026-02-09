@@ -26,6 +26,7 @@ Esta habilidad está diseñada para enriquecer la creación de prompts mediante 
 *   **Tegumento Exacto**: ¿Plumas en todo el cuerpo o solo en brazos? ¿Escamas grandes o tipo guijarro?
 *   **Colores Teóricos**: ¿Hay estudios de melanosomas (ej. Microraptor, Borealopelta) o hipótesis basadas en el entorno?
 *   **Proporciones Reales**: Olvida el cine. ¿Patas cortas? ¿Cola rígida? ¿Cuello en S?
+*   **ALERTA DE FAKE**: NO inventes rasgos. Si el dinosaurio no tenía plumas, no se las pongas. Si no escupía veneno, no lo pongas. Tu objetivo es el REALISMO CIENTÍFICO, no la fantasía de Hollywood (salvo que se pida explícitamente).
 
 ### 2. Traducción a "Lenguaje IA" (Prompt Engineering)
 La precisión científica no sirve si la IA no la entiende. Traduce tus hallazgos a instrucciones visuales claras:

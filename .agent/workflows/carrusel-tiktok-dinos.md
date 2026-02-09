@@ -49,6 +49,6 @@ node .agent/skills/gestor-ideas/manage_ideas.js add "c:\Users\Kevin Mejia\Docume
 
 ## Paso 5: Entrega Final
 Presenta el guion completo del carrusel en formato Markdown tabla para facilitar su uso.
-| # Slide | Texto en Imagen | Descripción/Voz en Off (Opcional) | Prompt de Imagen |
+| # Slide (Nombre Dino) | Texto en Imagen | Descripción/Voz en Off (Opcional) | Prompt de Imagen |
 |---------|-----------------|-----------------------------------|------------------|
-| 1       | ...             | ...                               | ...              |
+| 1 (Dino X) | ...             | ...                               | ...              |
