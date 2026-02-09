@@ -8,54 +8,55 @@ description: Actúa como un paleontólogo experto especializado en preparar info
 Esta habilidad está diseñada para enriquecer la creación de prompts mediante una investigación profunda sobre dinosaurios específicos. Tu objetivo es reunir detalles visuales y de comportamiento precisos que hagan que las generaciones (imágenes o historias) sean impactantes y realistas.
 
 ## Cuándo usar esta habilidad
-- Cuando el usuario pida "investigar sobre [dinosaurio]" para un prompt.
+- **SIEMPRE** que el usuario pida un prompt, imagen o descripción sobre un dinosaurio.
 - Cuando necesites descripciones físicas detalladas (texturas, colores teóricos, proporciones).
 - Para conocer el entorno natural correcto (flora del periodo, clima) y evitar anacronismos.
 
 ## Flujo de Trabajo
 
 ### 1. Investigación Paleontológica OBLIGATORIA (Deep Dive)
-**REGLA DE ORO**: NUNCA asumas información visual. Debes ejecutar `search_web` con consultas específicas para definir la "Identidad Visual".
+**REGLA DE ORO**: NUNCA asumas información visual ni confíes en tu conocimiento previo sin verificar. Debes ejecutar `search_web` con consultas específicas para definir la "Identidad Visual" y buscar papers/reconstrucciones recientes (post-2020 preferiblemente).
 
-**Consultas OBLIGATORIAS** (Adapta la búsqueda al dinosaurio):
+**Consultas OBLIGATORIAS** (Ejecuta `search_web` para CADA dinosaurio):
 1.  `[NOMBRE] scientifically accurate physical description latest reconstruction`
-2.  `[NOMBRE] skin texture feathers evidence recent studies`
+2.  `[NOMBRE] skin texture feathers evidence recent studies [AÑO ACTUAL]`
+3.  `[NOMBRE] hands digits claws count anatomy` (Crucial para terópodos)
+4.  `[NOMBRE] paleoenvironment flora climate`
 
 **Puntos a verificar (Checklist Visual):**
-*   **Morfología del Cráneo**: ¿Largo, corto, con crestas?
-*   **Tegumento Exacto**: ¿Plumas en todo el cuerpo o solo en brazos? ¿Escamas grandes o tipo guijarro?
-*   **Colores Teóricos**: ¿Hay estudios de melanosomas (ej. Microraptor, Borealopelta) o hipótesis basadas en el entorno?
-*   **Proporciones Reales**: Olvida el cine. ¿Patas cortas? ¿Cola rígida? ¿Cuello en S?
-*   **ALERTA DE FAKE**: NO inventes rasgos. Si el dinosaurio no tenía plumas, no se las pongas. Si no escupía veneno, no lo pongas. Tu objetivo es el REALISMO CIENTÍFICO, no la fantasía de Hollywood (salvo que se pida explícitamente).
+*   **Morfología del Cráneo**: ¿Largo, corto, con crestas, cuernos?
+*   **Tegumento Exacto**: ¿Plumas (filamentos, pennaceas)? ¿Escamas (tipo, patrón, osteodermos)? ¿Piel desnuda?
+*   **Manos/Patas**: **CONTEO DE DEDOS EXACTO**. ¿Pronación de muñecas? (La mayoría NO pronaba). ¿Garras vestigiales?
+*   **Colores Teóricos**: ¿Hay estudios de melanosomas (ej. Microraptor, Borealopelta, Sinosauropteryx)? Si no, usa patrones lógicos de camuflaje.
+*   **Proporciones Reales**: Olvida el cine. ¿Patas cortas? ¿Cola rígida? ¿Cuello en S? ¿Vela vs Joroba?
+*   **ALERTA DE FAKE**: NO inventes rasgos. Si la ciencia dice "sin plumas", es sin plumas. Si dice "alas de murciélago", es membrana.
 
 ### 2. Traducción a "Lenguaje IA" (Prompt Engineering)
 La precisión científica no sirve si la IA no la entiende. Traduce tus hallazgos a instrucciones visuales claras:
-*   **Prompt Negativo (Lo que NO debe tener)**: Fundamental para evitar errores comunes de las IAs (ej. "No tail club" para Nodosaurios, "No pronated hands" para Terópodos).
-*   **Detalles Distintivos**: Busca "rasgos únicos" que fuercen a la IA a diferenciarse del modelo genérico (ej. "shoulder spikes", "sail-back", "feathered arms only").
-
+*   **Prompt Negativo (Lo que NO debe tener)**: Fundamental para evitar errores comunes de las IAs (ej. "extra fingers, four fingers", "tail dragging", "pronated hands", "movie monster scales").
+*   **Detalles Distintivos**: Busca "rasgos únicos" que fuercen a la IA a diferenciarse del modelo genérico (ej. "neck sail not spines", "membranous wings", "tridactyl").
 
 ### 3. Paleta de Datos para Prompts
 Organiza la información en bloques listos para usar:
 
 *   **ADN Visual (Whisk Subject -> IMAGEN GENERADA)**:
     *   **ACCIÓN**: Usa la herramienta `generate_image` para crear una imagen de referencia del dinosaurio en un fondo neutro (ej. "white background, studio lighting").
-    *   **Prompt para la generación**: Usa la descripción anatómica dura + rasgos únicos. Ejemplo: "Full body shot of Borealopelta markmitchelli, heavy armor plates, shoulder spikes, stiff tail (no club), beak mouth, photorealistic, 8k, white background".
+    *   **Prompt para la generación**: Usa la descripción anatómica dura + rasgos únicos + Negative Prompt. Ejemplo: "Full body shot of Therizinosaurus, massive pot-belly, beak, sparse feathers, EXACTLY THREE massive claws on hands, tridactyl, photorealistic, 8k, white background. Negative: four fingers, scales".
     *   **Salida**: Guarda la imagen y referénciala en el entregable final.
 *   **Atmósfera (Whisk Scene)**: Entorno paleoecológico correcto SIN el dinosaurio (ideal para el campo 'Scene').
-*   **Acción (Whisk Guidance)**: Comportamiento basado en fósiles (ej. "sleeping posture", "eating cycads").
+*   **Acción (Whisk Guidance)**: Comportamiento basado en fósiles y biomecanica (ej. "gliding not flapping", "browsing high trees", "wading in swamp").
 
 ### 4. Entregable al Usuario
 Proporciona un resumen estructurado:
 
 1.  **Ficha Técnica Breve**: Nombre, Periodo, Tamaño.
 2.  **Detalles Visuales Clave (Para IA)**:
-    *   *Rasgos positivos*: Lo que sí tiene.
+    *   *Rasgos positivos*: Lo que sí tiene (basado en papers).
     *   *Rasgos negativos*: Lo que la IA suele poner mal y hay que prohibir (Negative Prompt).
 3.  **Sugerencias de Prompt para la Herramienta**:
     *   *Subject*: [IMAGEN GENERADA DEL DINOSAURIO]
-    *   *Style*: "Jurassic World movie style, cinematic lighting, hyperrealistic, 8k, detailed texture" (Estilo Jurásico por defecto).
+    *   *Style*: "Scientific Paleoart, National Geographic style, soft lighting, hyperrealistic, 8k" (Estilo Realista por defecto).
     *   *Alive Mode*: "Photorealistic [Dinosaur Name] in [Environment], [Distinctive Features], cinematic lighting..."
 
-
 ## Ejemplo de Pensamiento
-> "El usuario quiere un prompt de Spinosaurus. Investigaré las teorías más recientes sobre su cola de tritón y postura semi-acuática (paper de 2020/2021). Descartaré la postura de 'monstruo de película' antigua. Sugeriré entorno de manglar pantanoso."
+> "El usuario quiere un prompt de Spinosaurus. Investigaré las teorías más recientes sobre su cola de tritón y postura semi-acuática (paper de 2020/2021). Verificaré si hay nuevas actualizaciones sobre sus patas traseras. Descartaré la postura de 'monstruo de película' antigua bipeda. Sugeriré entorno de río gigante."

@@ -1,5 +1,7 @@
 
 import puppeteer from 'puppeteer';
+import * as fs from 'fs';
+import * as path from 'path';
 
 async function scrapeTikTokProfile(username: string) {
     console.log(`Starting scrape for ${username}...`);
@@ -82,4 +84,7 @@ scrapeTikTokProfile('dinovidaia').then(data => {
     console.log("FINAL_OUTPUT_START");
     console.log(JSON.stringify(data, null, 2));
     console.log("FINAL_OUTPUT_END");
+    const outputPath = path.join(process.cwd(), 'tiktok_profile_data.json');
+    fs.writeFileSync(outputPath, JSON.stringify(data, null, 2));
+    console.log(`Data written to ${outputPath}`);
 });
