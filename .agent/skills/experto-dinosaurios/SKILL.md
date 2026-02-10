@@ -17,13 +17,18 @@ Esta habilidad está diseñada para enriquecer la creación de prompts mediante 
 ### 1. Investigación Paleontológica OBLIGATORIA (Deep Dive)
 **REGLA DE ORO**: NUNCA asumas información visual ni confíes en tu conocimiento previo sin verificar. Debes ejecutar `search_web` con consultas específicas para definir la "Identidad Visual" y buscar papers/reconstrucciones recientes (post-2020 preferiblemente).
 
-**Consultas OBLIGATORIAS** (Ejecuta `search_web` para CADA dinosaurio):
-1.  `[NOMBRE] scientifically accurate physical description latest reconstruction`
+**Fuentes Prioritarias:**
+1.  **Dinopedia (Fandom)**: `https://dinopedia.fandom.com/wiki/Main_Page` (Usa el navegador para buscar detalles específicos si es posible).
+2.  **Papers Académicos Recientes (2020-2025)**.
+
+**Consultas OBLIGATORIAS** (Ejecuta `search_web` o navega para CADA dinosaurio):
+1.  `[NOMBRE] scientifically accurate physical description lips teeth 2024` (CRUCIAL: Validar si tenía labios/tejido extra-oral).
 2.  `[NOMBRE] skin texture feathers evidence recent studies [AÑO ACTUAL]`
 3.  `[NOMBRE] hands digits claws count anatomy` (Crucial para terópodos)
 4.  `[NOMBRE] paleoenvironment flora climate`
 
 **Puntos a verificar (Checklist Visual):**
+*   **Tejidos Orales (Labios vs Dientes)**: **NUEVO ESTÁNDAR**. La mayoría de terópodos (incluido T-Rex) tenían "labios" (tejido extra-oral) que cubrían los dientes cuando la boca estaba cerrada. ¡Verifica esto explícitamente!
 *   **Morfología del Cráneo**: ¿Largo, corto, con crestas, cuernos?
 *   **Tegumento Exacto**: ¿Plumas (filamentos, pennaceas)? ¿Escamas (tipo, patrón, osteodermos)? ¿Piel desnuda?
 *   **Manos/Patas**: **CONTEO DE DEDOS EXACTO**. ¿Pronación de muñecas? (La mayoría NO pronaba). ¿Garras vestigiales?
@@ -33,8 +38,8 @@ Esta habilidad está diseñada para enriquecer la creación de prompts mediante 
 
 ### 2. Traducción a "Lenguaje IA" (Prompt Engineering)
 La precisión científica no sirve si la IA no la entiende. Traduce tus hallazgos a instrucciones visuales claras:
-*   **Prompt Negativo (Lo que NO debe tener)**: Fundamental para evitar errores comunes de las IAs (ej. "extra fingers, four fingers", "tail dragging", "pronated hands", "movie monster scales").
-*   **Detalles Distintivos**: Busca "rasgos únicos" que fuercen a la IA a diferenciarse del modelo genérico (ej. "neck sail not spines", "membranous wings", "tridactyl").
+*   **Prompt Negativo (Lo que NO debe tener)**: Fundamental para evitar errores comunes de las IAs (ej. "exposed teeth when mouth closed", "shrink-wrapped skin", "extra fingers", "four fingers", "tail dragging", "pronated hands", "movie monster scales").
+*   **Detalles Distintivos**: Busca "rasgos únicos" que fuercen a la IA a diferenciarse del modelo genérico (ej. "lips covering teeth", "neck sail not spines", "membranous wings", "tridactyl").
 
 ### 3. Paleta de Datos para Prompts
 Organiza la información en bloques listos para usar:

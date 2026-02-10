@@ -15,9 +15,10 @@ Solicita al usuario la idea central o el guion de las diapositivas.
 
 ## Paso 2: Investigación Científica (Skill `experto-dinosaurios`)
 Antes de escribir cualquier prompt, utiliza los principios de la skill `experto-dinosaurios` para verificar:
-- **Anatomía:** ¿Plumas? ¿Postura de manos? ¿Rasgos únicos (crestas, púas)?
+- **Fuente Primaria:** Consulta siempre `Dinopedia` (Fandom) o papers recientes usando el navegador.
+- **Anatomía Crítica:** **VERIFICA SIEMPRE SI TENÍA LABIOS** (Tejido extra-oral). La mayoría de terópodos NO mostraban los dientes con la boca cerrada.
 - **Entorno:** Fauna y flora correcta del periodo geológico.
-- **Evita Mitos:** Descarta ideas obsoletas (ej. T-Rex erguido como canguro). **INVESTIGACIÓN OBLIGATORIA**: Tu máxima prioridad es la fidelidad científica. No crees "monstruos de película" (estilo Jurassic Park) a menos que sea una comparación explícita. El dinosaurio debe verse como era en la vida real.
+- **Evita Mitos:** Descarta ideas obsoletas (ej. T-Rex erguido como canguro, "shrink-wrapped" faces). **INVESTIGACIÓN OBLIGATORIA**: Tu máxima prioridad es la fidelidad científica. No crees "monstruos de película" (estilo Jurassic Park) a menos que sea una comparación explícita. El dinosaurio debe verse como era en la vida real.
 
 ## Paso 3: Estructuración Whisk (Skill `experto-whisk`)
 Para cada diapositiva, genera los 4 campos obligatorios definidos en la skill `experto-whisk`.
