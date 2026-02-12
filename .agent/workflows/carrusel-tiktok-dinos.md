@@ -30,10 +30,10 @@ Considera temas como:
 ## Paso 3: Desarrollo del Contenido
 Una vez que el usuario elija una idea:
 
-1. **Estructura del Carrusel:**
-   - **Diapositiva 1 (Gancho):** Título impactante y visualmente atractivo.
-   - **Diapositivas 2-X (Cuerpo):** Información curiosa, imágenes impactantes, texto breve y legible.
-   - **Diapositiva Final (CTA):** Llamado a la acción (Sígueme, comenta, comparte).
+1. **Estructura del Carrusel (Total 6 Diapositivas):**
+   - **Diapositiva 1 (Gancho Visual):** Imagen de alto impacto, título polémico o pregunta irresistible.
+   - **Diapositivas 2-6 (Los 5 Dinos):** 5 ejemplos concretos (Top 5). Cada uno con su imagen y dato clave.
+   - **Diapositiva Final (CTA - Opcional en voz/texto):** Llamado a la acción integrado en la última diapositiva o en la descripción.
 
 2. **Generación de Prompts:**
    - Para cada diapositiva, genera un prompt detallado para generar la imagen (puedes usar la skill `experto-dinosaurios` si necesitas precisión científica).
