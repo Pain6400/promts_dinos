@@ -9,10 +9,8 @@ Este workflow toma una idea o lista de diapositivas y genera los **prompts detal
 NO generes imágenes directamente. Tu objetivo es entregar los "Ingredientes" (Prompts) perfectos.
 
 ## Paso 1: Confirmar Detalles del Carrusel
-Solicita al usuario la idea central o el guion.
-- **Estructura Fija**: 6 Diapositivas.
-  - Slide 1: Portada/Gancho.
-  - Slide 2-6: Los 5 puntos/dinosaurios del Top.
+Solicita al usuario la idea central o el guion de las diapositivas.
+- Si es solo un tema, elabora 3-5 escenas clave.
 - Confirma estilo: **Fotorealista** o **Ilustración Artística**.
 
 ## Paso 2: Investigación Científica (Skill `experto-dinosaurios`)
