@@ -54,7 +54,7 @@ Organiza la información en bloques listos para usar:
 ### 4. Entregable al Usuario
 Proporciona un resumen estructurado:
 
-1.  **Ficha Técnica Breve**: Nombre, Periodo, Tamaño.
+1.  **Ficha Técnica Breve**: Nombre, Periodo, Tamaño (Longitud), Peso.
 2.  **Detalles Visuales Clave (Para IA)**:
     *   *Rasgos positivos*: Lo que sí tiene (basado en papers).
     *   *Rasgos negativos*: Lo que la IA suele poner mal y hay que prohibir (Negative Prompt).

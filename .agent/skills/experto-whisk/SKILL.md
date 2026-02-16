@@ -31,9 +31,9 @@ Para CADA imagen que generes, debes entregar siempre estos 4 campos por separado
 
 ### 4. PROMPT PRINCIPAL (La Mezcla / Acción)
 *   **¿Qué es?**: El cuadro de texto principal donde el usuario escribe lo que sucede.
-*   **Tu objetivo**: Describir la **ACCIÓN** y cómo interactúan las partes. Este es el prompt que "mezcla todo".
-*   **Formato**: `[Sujeto] está [Haciendo algo] en [Contexto].`
-*   *Ejemplo*: "A black Archaeopteryx is clumsy flapping its wings trying to take off from the water, water splashing, dynamic motion blur."
+*   **Tu objetivo**: Describir la **ACCIÓN**, la interacción y **SIEMPRE incluir datos biométricos (Tamaño/Peso)** para asegurar la escala correcta en la generación.
+*   **Formato**: `[Sujeto] (Length: [X]m, Weight: [Y]t) [Action] in [Context].`
+*   *Ejemplo*: "A black Archaeopteryx (Length: 0.5m, Weight: 1kg) is clumsy flapping its wings trying to take off from the water, water splashing, dynamic motion blur."
 
 ## Flujo de Trabajo
 
