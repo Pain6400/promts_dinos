@@ -1,0 +1,26 @@
+[
+  {
+    "ID": 1,
+    "Idea": "Gigantes del Mar (Que NO son Dinos)",
+    "Estado": "Hecho",
+    "Fecha": "2026-02-01"
+  },
+  {
+    "ID": 2,
+    "Idea": "Top 5 Dinosaurios Mascota (Pequeños)",
+    "Estado": "Hecho",
+    "Fecha": "2026-02-08"
+  },
+  {
+    "ID": 3,
+    "Idea": "Los 'Guepardos' del Jurásico: Top 5 Más Rápidos",
+    "Estado": "Hecho",
+    "Fecha": "2026-02-09"
+  },
+  {
+    "ID": 4,
+    "Idea": "Cerebros del Jurásico: Los 5 Dinosaurios Más Inteligentes",
+    "Estado": "Pendiente",
+    "Fecha": "2026-02-13"
+  }
+]
