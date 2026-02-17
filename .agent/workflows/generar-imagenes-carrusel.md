@@ -28,7 +28,7 @@ Asegúrate de que los prompts estén en **INGLÉS** para máxima compatibilidad 
 2.  **SCENE (El Fondo):** Descripción del entorno SIN el dinosaurio. Iluminación, clima, vegetación. Ejemplo: *"Ancient Cretaceous forest, giant ferns, misty morning light, bokeh background."*
 3.  **STYLE (El Estilo):** Define UN SOLO estilo global para todo el carrusel (Estilo Jurásico/Realista). Este NO va en la tabla, sino al inicio.
 4.  **PROMPT PRINCIPAL (La Acción):** Cómo el Subject interactúa con la Scene. Ejemplo: *"Microraptor gliding down from a tall tree branch in the misty forest."*
-5.  **SLIDE/GANCHO:** La primera diapositiva (Slide 1) SIEMPRE debe ser un "Hook" visual de alto impacto para atraer gente.
+5.  **SLIDE 1 (PORTADA/GANCHO):** La primera diapositiva SIEMPRE debe ser una "Portada" visual de alto impacto para el título. NO debe ser el primer ítem de la lista, sino una representación gráfica del tema general.
 6.  **NOMBRES:** En la columna "Slide", usa siempre el nombre del dinosaurio en **INGLÉS** (Scientific Name).
 
 ## Paso 4: Entrega Final
@@ -42,13 +42,15 @@ Presenta el resultado en una tabla limpia para que el usuario pueda copiar y peg
 ### **Descripción y Hashtags:**
 *(Texto sugerido para el post de TikTok + Lista de hashtags)*
 
+
 ### **Tabla de Prompts (Whisk):**
 
 **Global Style (Jurassic Aesthetic):**
 *(Ejemplo: National Geographic wildlife photography, Jurassic period, 8k, photorealistic, cinematic lighting, hyper-detailed texture)*
 
-| Slide (English Name) | SUBJECT (Personaje) | SCENE (Fondo) | PROMPT PRINCIPAL (Acción) |
-| :--- | :--- | :--- | :--- |
-| 1 (Hook / Dino Name) | ... | ... | ... |
-| 2 (Dino Name) | ... | ... | ... |
-| ... | ... | ... | ... |
+| Slide (English Name) | SIZE (Tamaño Real) | SUBJECT (Personaje) | SCENE (Fondo) | PROMPT PRINCIPAL (Acción) |
+| :--- | :--- | :--- | :--- | :--- |
+| **1 (Portada / Hook)** | N/A | *(Visual Genérico/Impactante del Tema)* | ... | ... |
+| 2 (Dino Name 1) | (e.g. 2m length, 15kg) | ... | ... | ... |
+| 3 (Dino Name 2) | ... | ... | ... | ... |
+| ... | ... | ... | ... | ... |

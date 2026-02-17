@@ -34,6 +34,7 @@ Esta habilidad está diseñada para enriquecer la creación de prompts mediante 
 *   **Manos/Patas**: **CONTEO DE DEDOS EXACTO**. ¿Pronación de muñecas? (La mayoría NO pronaba). ¿Garras vestigiales?
 *   **Colores Teóricos**: ¿Hay estudios de melanosomas (ej. Microraptor, Borealopelta, Sinosauropteryx)? Si no, usa patrones lógicos de camuflaje.
 *   **Proporciones Reales**: Olvida el cine. ¿Patas cortas? ¿Cola rígida? ¿Cuello en S? ¿Vela vs Joroba?
+*   **DIMENSIONES EXACTAS (CRUCIAL):** Busca datos precisos de **Longitud**, **Altura** y **Peso estimado**. Esto es obligatorio para la columna "SIZE" en los entregables.
 *   **ALERTA DE FAKE**: NO inventes rasgos. Si la ciencia dice "sin plumas", es sin plumas. Si dice "alas de murciélago", es membrana.
 
 ### 2. Traducción a "Lenguaje IA" (Prompt Engineering)
