@@ -13,12 +13,30 @@ Solicita al usuario la idea central o el guion de las diapositivas.
 - Si es solo un tema, elabora 3-5 escenas clave.
 - Confirma estilo: **Fotorealista** o **Ilustración Artística**.
 
-## Paso 2: Investigación Científica (Skill `experto-dinosaurios`)
-Antes de escribir cualquier prompt, utiliza los principios de la skill `experto-dinosaurios` para verificar:
-- **Fuente Primaria:** Consulta siempre `Dinopedia` (Fandom) o papers recientes usando el navegador.
-- **Anatomía Crítica:** **VERIFICA SIEMPRE SI TENÍA LABIOS** (Tejido extra-oral). La mayoría de terópodos NO mostraban los dientes con la boca cerrada.
-- **Entorno:** Fauna y flora correcta del periodo geológico.
-- **Evita Mitos:** Descarta ideas obsoletas (ej. T-Rex erguido como canguro, "shrink-wrapped" faces). **INVESTIGACIÓN OBLIGATORIA**: Tu máxima prioridad es la fidelidad científica. No crees "monstruos de película" (estilo Jurassic Park) a menos que sea una comparación explícita. El dinosaurio debe verse como era en la vida real.
+## Paso 2: Validación e Investigación (Skill `experto-dinosaurios`)
+**ALERTA DE CALIDAD:** Antes de escribir una sola palabra del prompt, debes actuar como un "Fact-Checker" implacable.
+
+1.  **Auditoría de Coherencia Temporal (CRÍTICO):**
+    *   Analiza el Título/Tema propuesto (ej. "¿Cerebros del **Jurásico**?").
+    *   Verifica la época geológica real de **CADA** dinosaurio en la lista.
+    *   **SI HAY CONFLICTO:** Si el título especifica una era (ej. Jurásico) y hay dinosaurios de otra era (ej. Cretácico), **DETENTE Y ADVIERTE**.
+        *   *Acción:* No generes los prompts erróneos. Corrige el título sugerido (ej. "Cerebros del Cretácico") o marca los dinosaurios intrusos.
+        *   *Ejemplo:* "Oviraptor y T-Rex son del Cretácico, no del Jurásico. Sugiero cambiar el título a 'Cerebros del Cretácico'."
+
+2.  **Auditoría Taxonómica (NO TODO ES UN DINOSAURIO):**
+    *   **Pterosaurios (Voladores):** Pteranodon, Quetzalcoatlus NO son dinosaurios. Son *Pterosaurios*. Si el título dice "Dinos Voladores", CORRIGE a "Reptiles Voladores" o "Gigantes del Cielo".
+    *   **Reptiles Marinos:** Mosasaurus, Plesiosaurus NO son dinosaurios. Son *Reptiles Marinos*.
+    *   **Sinápsidos:** Dimetrodon NO es un dinosaurio (es más cercano a mamíferos).
+    *   *Acción:* Si detectas este error en el título, sugiere una corrección inmediata (ej. "Monstruos Marinos" en vez de "Dinos de Agua").
+
+3.  **Verificación Ortográfica:**
+    *   Detecta errores en los nombres científicos (ej. *Toodon* → *Troodon*, *T-Rex* → *Tyrannosaurus rex*). Corrige silenciosamente en la tabla, pero avisa si la confusión era grave.
+
+4.  **Investigación Visual (Checklist de `experto-dinosaurios`):**
+    *   **Fuente Primaria:** Consulta `Dinopedia` (Fandom) o papers para detalles anatómicos.
+    *   **Anatomía:** ¿Tenía labios? (T-Rex SÍ tenía labios). ¿Plumas? (Velociraptor SÍ tenía plumas).
+    *   **Evita Mitos:** Nada de manos pronadas (manos de zombie) ni piel pegada al hueso (shrink-wrapped).
+    *   **Entorno:** Asegura que la flora de fondo corresponda a su periodo real.
 
 ## Paso 3: Estructuración Whisk (Skill `experto-whisk`)
 Para cada diapositiva, genera los 4 campos obligatorios definidos en la skill `experto-whisk`.
