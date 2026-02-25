@@ -6,9 +6,10 @@ const args = process.argv.slice(2);
 const action = args[0];
 const filePath = args[1];
 const ideaText = args[2]; // Only for 'add'
+const dinosText = args[3]; // Optional, only for 'add'
 
 if (!action || !filePath) {
-    console.error("Usage: node manage_ideas.js <action> <file_path> [idea]");
+    console.error("Usage: node manage_ideas.js <action> <file_path> [idea] [dinos]");
     process.exit(1);
 }
 
@@ -26,7 +27,7 @@ const sheetName = 'carrusel';
 // Check if sheet exists
 if (!workbook.Sheets[sheetName]) {
     // Create sheet
-    const headers = [['ID', 'Idea', 'Estado', 'Fecha']];
+    const headers = [['ID', 'Idea', 'Estado', 'Fecha', 'Dinosaurios']];
     const newWorksheet = XLSX.utils.aoa_to_sheet(headers);
     XLSX.utils.book_append_sheet(workbook, newWorksheet, sheetName);
     XLSX.writeFile(workbook, absolutePath);
@@ -54,10 +55,11 @@ if (action === 'list') {
             ID: newId,
             Idea: ideaText,
             Estado: 'Pendiente',
-            Fecha: new Date().toISOString().split('T')[0]
+            Fecha: new Date().toISOString().split('T')[0],
+            Dinosaurios: dinosText || ''
         };
         
-        XLSX.utils.sheet_add_json(worksheet, [newRow], { skipHeader: true, origin: -1 });
+        XLSX.utils.sheet_add_json(worksheet, [newRow], { header: ['ID', 'Idea', 'Estado', 'Fecha', 'Dinosaurios'], skipHeader: true, origin: -1 });
         XLSX.writeFile(workbook, absolutePath);
         console.log(JSON.stringify({ status: 'success', message: 'Idea added', data: newRow }));
     }
