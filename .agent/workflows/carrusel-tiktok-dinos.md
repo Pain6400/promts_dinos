@@ -40,12 +40,12 @@ Una vez que el usuario elija una idea:
    - Genera el texto que irá superpuesto en la imagen o en la descripción.
 
 ## Paso 4: Registrar la Idea
-Guarda la idea seleccionada en la base de datos para futuras referencias.
+Guarda la idea seleccionada y los animales usados en la base de datos para futuras referencias.
 
 ```bash
-node .agent/skills/gestor-ideas/manage_ideas.js add "c:\Users\Kevin Mejia\Documents\GitHub\promts_dinos\plantilla_dinosaurios_100.xlsx" "<IDEA_SELECCIONADA>"
+node .agent/skills/gestor-ideas/manage_ideas.js add "c:\Users\Kevin Mejia\Documents\GitHub\promts_dinos\plantilla_dinosaurios_100.xlsx" "<IDEA_SELECCIONADA>" "<ANIMAL_1, ANIMAL_2...>"
 ```
-*(Reemplaza <IDEA_SELECCIONADA> con el título de la idea que el usuario aprobó)*
+*(Reemplaza <IDEA_SELECCIONADA> con el título de la idea, y <ANIMAL_1, ANIMAL_2...> con los nombres científicos de los animales separados por coma)*
 
 ## Paso 5: Entrega Final
 Presenta el guion completo del carrusel en formato Markdown tabla para facilitar su uso.
