@@ -36,7 +36,7 @@ Solicita al usuario la idea central o el guion de las diapositivas.
     *   **Fuente Primaria:** Consulta `Dinopedia` (Fandom) o papers para detalles anatómicos.
     *   **Anatomía:** ¿Tenía labios? (T-Rex SÍ tenía labios). ¿Plumas? (Velociraptor SÍ tenía plumas).
     *   **Evita Mitos:** Nada de manos pronadas (manos de zombie) ni piel pegada al hueso (shrink-wrapped).
-    *   **Entorno:** Asegura que la flora de fondo corresponda a su periodo real.
+    *   **Clima y Entorno (SCENE):** Asegura que la flora y el clima correspondan a su periodo real. **NO exageres los biomas** (ej. la Formación Yixian/Liaoning era un clima templado con estaciones, no asumas nieve permanente solo porque los dinosaurios tenían plumas).
 
 ## Paso 3: Estructuración Whisk (Skill `experto-whisk`)
 Para cada diapositiva, genera los 4 campos obligatorios definidos en la skill `experto-whisk`.
@@ -44,7 +44,7 @@ Asegúrate de que los prompts estén en **INGLÉS** para máxima compatibilidad 
 
 1.  **SUBJECT (El Personaje):** Descripción anatómica detallada y aislada. Ejemplo: *"Anatomically accurate Microraptor, iridescent black feathers, four wings layout..."*
 2.  **SCENE (El Fondo):** Descripción del entorno SIN el dinosaurio. Iluminación, clima, vegetación. Ejemplo: *"Ancient Cretaceous forest, giant ferns, misty morning light, bokeh background."*
-3.  **STYLE (El Estilo):** Define UN SOLO estilo global para todo el carrusel (Estilo Jurásico/Realista). Este NO va en la tabla, sino al inicio.
+3.  **STYLE (El Estilo):** Define UN SOLO estilo global para todo el carrusel coherente con el TEMA (ej. terror, invernal, pantano). **NUNCA uses "National Geographic" ni marcas reales.** Este NO va en la tabla, sino al inicio.
 4.  **PROMPT PRINCIPAL (La Acción):** Cómo el Subject interactúa con la Scene. Ejemplo: *"Microraptor gliding down from a tall tree branch in the misty forest."*
 5.  **SLIDE 1 (PORTADA/GANCHO):** La primera diapositiva SIEMPRE debe ser una "Portada" visual de alto impacto para el título. NO debe ser el primer ítem de la lista, sino una representación gráfica del tema general.
 6.  **NOMBRES:** En la columna "Slide", usa siempre el nombre del dinosaurio en **INGLÉS** (Scientific Name).
@@ -63,8 +63,8 @@ Presenta el resultado en una tabla limpia para que el usuario pueda copiar y peg
 
 ### **Tabla de Prompts (Whisk):**
 
-**Global Style (Jurassic Aesthetic):**
-*(Ejemplo: National Geographic wildlife photography, Jurassic period, 8k, photorealistic, cinematic lighting, hyper-detailed texture)*
+**Global Style ([Tema] Aesthetic):**
+*(Ejemplo: Prehistoric wildlife photography, atmospheric environment, 8k resolution, photorealistic, cinematic lighting, hyper-detailed texture, anatomically accurate paleoart)*
 
 | Slide (English Name) | SIZE (Tamaño Real) | SUBJECT (Personaje) | SCENE (Fondo) | PROMPT PRINCIPAL (Acción) |
 | :--- | :--- | :--- | :--- | :--- |

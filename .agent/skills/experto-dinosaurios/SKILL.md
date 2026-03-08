@@ -36,6 +36,7 @@ Esta habilidad está diseñada para enriquecer la creación de prompts mediante 
 *   **Proporciones Reales**: Olvida el cine. ¿Patas cortas? ¿Cola rígida? ¿Cuello en S? ¿Vela vs Joroba?
 *   **DIMENSIONES EXACTAS (CRUCIAL):** Busca datos precisos de **Longitud**, **Altura** y **Peso estimado**. Esto es obligatorio para la columna "SIZE" en los entregables.
 *   **ALERTA DE FAKE**: NO inventes rasgos. Si la ciencia dice "sin plumas", es sin plumas. Si dice "alas de murciélago", es membrana.
+*   **Clima y Entorno (SCENE)**: Precisión estacional. NO exageres el clima ni caigas en estereotipos bioclimáticos. Por ejemplo, si un dinosaurio (como Yutyrannus) proviene de la Formación Yixian (Liaoning), no asumas nieve permanente; investiga y refleja el clima real (templado/frío con estaciones marcadas).
 
 ### 2. Traducción a "Lenguaje IA" (Prompt Engineering)
 La precisión científica no sirve si la IA no la entiende. Traduce tus hallazgos a instrucciones visuales claras:
@@ -49,7 +50,7 @@ Organiza la información en bloques listos para usar:
     *   **ACCIÓN**: Usa la herramienta `generate_image` para crear una imagen de referencia del dinosaurio en un fondo neutro (ej. "white background, studio lighting").
     *   **Prompt para la generación**: Usa la descripción anatómica dura + rasgos únicos + Negative Prompt. Ejemplo: "Full body shot of Therizinosaurus, massive pot-belly, beak, sparse feathers, EXACTLY THREE massive claws on hands, tridactyl, photorealistic, 8k, white background. Negative: four fingers, scales".
     *   **Salida**: Guarda la imagen y referénciala en el entregable final.
-*   **Atmósfera (Whisk Scene)**: Entorno paleoecológico correcto SIN el dinosaurio (ideal para el campo 'Scene').
+*   **Atmósfera (Whisk Scene)**: Entorno paleoecológico correcto SIN el dinosaurio (ideal para el campo 'Scene'). Respeta rigorosamente el clima: si era una zona con estaciones, descríbela (ej. otoñal o templado húmedo), evitando sobre-simplificar (nieve perpetua o desierto genérico).
 *   **Acción (Whisk Guidance)**: Comportamiento basado en fósiles y biomecanica (ej. "gliding not flapping", "browsing high trees", "wading in swamp").
 
 ### 4. Entregable al Usuario

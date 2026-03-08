@@ -1,0 +1,102 @@
+﻿[
+  {
+    "ID": 2,
+    "Idea": "Top 5 Dinosaurios Mascota (Peque├▒os)",
+    "Estado": "Hecho",
+    "Fecha": "2026-02-08"
+  },
+  {
+    "ID": 3,
+    "Idea": "Los 'Guepardos' del Jur├ísico: Top 5 M├ís R├ípidos",
+    "Estado": "Hecho",
+    "Fecha": "2026-02-09"
+  },
+  {
+    "ID": 4,
+    "Idea": "Cerebros del Jur├ísico: Los 5 Dinosaurios M├ís Inteligentes",
+    "Estado": "Hecho",
+    "Fecha": "2026-02-13"
+  },
+  {
+    "ID": 5,
+    "Idea": "M├ís Grandes que el T-Rex: 5 Superdepredadores",
+    "Estado": "Hecho",
+    "Fecha": "2026-02-14"
+  },
+  {
+    "ID": 6,
+    "Idea": "Terror en el Aire: los 5 depredadores mas letales del cretacico",
+    "Estado": "Hecho",
+    "Fecha": "2026-02-15"
+  },
+  {
+    "ID": 7,
+    "Idea": "Peque├▒os pero matones: los carnivoros de bolsillo",
+    "Estado": "Hecho",
+    "Fecha": "2026-02-17"
+  },
+  {
+    "ID": 8,
+    "Idea": "Gigantes del abismo: Los 5 verdaderos mounstuos marinos",
+    "Estado": "Hecho",
+    "Fecha": "2026-02-18"
+  },
+  {
+    "ID": 9,
+    "Idea": "Dinosaurios en la nieve? La verdad del polo sur",
+    "Estado": "Hecho",
+    "Fecha": "2026-02-13"
+  },
+  {
+    "ID": 10,
+    "Idea": "Asesinos toxicos: El top 5 de la prehistoria",
+    "Estado": "Hecho",
+    "Fecha": "2026-02-13"
+  },
+  {
+    "ID": 11,
+    "Idea": "Canibales: Dinosaurios que comian su familia",
+    "Estado": "Hecho",
+    "Fecha": "2026-02-13"
+  },
+  {
+    "ID": 12,
+    "Idea": "Los tanques vivientes: top 5 dinosaurios acorazados ",
+    "Estado": "Hecho",
+    "Fecha": "2026-02-13"
+  },
+  {
+    "ID": 13,
+    "Idea": "Aliens o dinosaurios? 5 especies que la ciencia no puede explicar (casi)",
+    "Estado": "Hecho",
+    "Fecha": "2026-02-14"
+  },
+  {
+    "ID": 14,
+    "Idea": "Garras de Pesadilla: Los 7 Dinosaurios con Garras M├ís Enormes",
+    "Estado": "Hecho",
+    "Fecha": "2026-02-20",
+    "Dinos Par1": "Therizinosaurus, Deinocheirus, Megaraptor, Utahraptor, Baryonyx, Balaur bondoc, Deinonychus"
+  },
+  {
+    "ID": 14,
+    "Idea": "Par├ísitos de Dinosaurios (Los verdaderos sobrevivientes)",
+    "Estado": "Pendiente",
+    "Fecha": "2026-02-25",
+    "Dinos Par1": "Pseudopulex,Deinocroton draculi,Burmaculex antiquus"
+  },
+  {
+    "ID": 15,
+    "Idea": "Top 5 Megarapt├│ridos M├ís Grandes",
+    "Estado": "Pendiente",
+    "Fecha": "2026-02-25",
+    "Dinos Par1": "Maip macrothorax, Aerosteon riocoloradense, Megaraptor namunhuaiquii, Orkoraptor burkei, Tratayenia roxasi"
+  },
+  {
+    "ID": 16,
+    "Idea": "Los 5 monstruos de agua: Cocodrilos que devoraban dinosaurios",
+    "Estado": "Pendiente",
+    "Fecha": "2026-03-05",
+    "Dinos Par1": "Deinosuchus, Sarcosuchus, Kaprosuchus, Machimosaurus, Dakosaurus"
+  }
+]
